@@ -1,0 +1,1341 @@
+15:38:46 (26912) INFO ConfigReader Using stryker.conf.json
+15:38:46 (26912) DEBUG BroadcastReporter Broadcasting to reporters ["progress","clear-text","html"]
+15:38:46 (26912) DEBUG ConfigReader Loading config /home/find_carol/Documentos/Estudo/projetos/sd-015-b-project-react-testing-library/stryker.conf.json
+15:38:46 (26912) DEBUG ConfigReader Loaded config: {
+  "$schema": "./node_modules/@stryker-mutator/core/schema/stryker-schema.json",
+  "mutate": [
+    "src/components/About.js",
+    "src/App.js",
+    "src/components/FavoritePokemons.js",
+    "src/components/NotFound.js",
+    "src/components/Pokedex.js",
+    "src/components/Pokemon.js",
+    "src/components/PokemonDetails.js"
+  ],
+  "mutator": {
+    "name": "javascript",
+    "excludedMutations": [
+      "ArithmeticOperator",
+      "ArrayDeclaration",
+      "ArrowFunction",
+      "BlockStatement",
+      "BooleanLiteral",
+      "ConditionalExpression",
+      "EqualityOperator",
+      "LogicalOperator",
+      "ObjectLiteral",
+      "UnaryOperator",
+      "UpdateOperator"
+    ]
+  },
+  "testRunner": "jest",
+  "reporters": [
+    "progress",
+    "clear-text",
+    "html"
+  ],
+  "coverageAnalysis": "off",
+  "jest": {
+    "projectType": "create-react-app"
+  },
+  "allowConsoleColors": true,
+  "commandRunner": {
+    "command": "npm test"
+  },
+  "clearTextReporter": {
+    "allowColor": true,
+    "logTests": true,
+    "maxTestsToLog": 3
+  },
+  "dashboard": {
+    "baseUrl": "https://dashboard.stryker-mutator.io/api/reports",
+    "reportType": "full"
+  },
+  "eventReporter": {
+    "baseDir": "reports/mutation/events"
+  },
+  "fileLogLevel": "trace",
+  "logLevel": "debug",
+  "maxConcurrentTestRunners": 9007199254740991,
+  "plugins": [
+    "@stryker-mutator/*"
+  ],
+  "symlinkNodeModules": true,
+  "tempDirName": ".stryker-tmp",
+  "thresholds": {
+    "high": 80,
+    "low": 60,
+    "break": null
+  },
+  "timeoutFactor": 1.5,
+  "timeoutMS": 5000,
+  "transpilers": [],
+  "warnings": true,
+  "configFile": "/home/find_carol/Documentos/Estudo/projetos/sd-015-b-project-react-testing-library/stryker.conf.json"
+}
+15:38:46 (26912) DEBUG PluginLoader Loading @stryker-mutator/* from /home/find_carol/Documentos/Estudo/projetos/sd-015-b-project-react-testing-library/node_modules/@stryker-mutator
+15:38:46 (26912) DEBUG PluginLoader Loading plugin "/home/find_carol/Documentos/Estudo/projetos/sd-015-b-project-react-testing-library/node_modules/@stryker-mutator/javascript-mutator" (matched with expression @stryker-mutator/*)
+15:38:46 (26912) DEBUG PluginLoader Loading plugin "/home/find_carol/Documentos/Estudo/projetos/sd-015-b-project-react-testing-library/node_modules/@stryker-mutator/jest-runner" (matched with expression @stryker-mutator/*)
+15:38:46 (26912) DEBUG PluginLoader Loading plugins /home/find_carol/Documentos/Estudo/projetos/sd-015-b-project-react-testing-library/node_modules/@stryker-mutator/javascript-mutator
+15:38:46 (26912) DEBUG PluginLoader Loading plugins /home/find_carol/Documentos/Estudo/projetos/sd-015-b-project-react-testing-library/node_modules/@stryker-mutator/jest-runner
+15:38:46 (26912) DEBUG PluginLoader Loading plugins /home/find_carol/Documentos/Estudo/projetos/sd-015-b-project-react-testing-library/node_modules/@stryker-mutator/core/src/reporters/index.js
+15:38:46 (26912) DEBUG buildSchemaWithPluginContributions Contributing 1 schemas from plugins to options validation.
+15:38:46 (26912) INFO InputFileResolver Found 7 of 64 file(s) to be mutated.
+15:38:46 (26912) DEBUG InputFileResolver All input files: [
+  "/home/find_carol/Documentos/Estudo/projetos/sd-015-b-project-react-testing-library/src/tests/renderWithRouter.js",
+  "/home/find_carol/Documentos/Estudo/projetos/sd-015-b-project-react-testing-library/stryker.log",
+  "/home/find_carol/Documentos/Estudo/projetos/sd-015-b-project-react-testing-library/.babelrc.json",
+  "/home/find_carol/Documentos/Estudo/projetos/sd-015-b-project-react-testing-library/.eslintignore",
+  "/home/find_carol/Documentos/Estudo/projetos/sd-015-b-project-react-testing-library/.eslintrc.json",
+  "/home/find_carol/Documentos/Estudo/projetos/sd-015-b-project-react-testing-library/.github/CODEOWNERS",
+  "/home/find_carol/Documentos/Estudo/projetos/sd-015-b-project-react-testing-library/.github/workflows/main.yml",
+  "/home/find_carol/Documentos/Estudo/projetos/sd-015-b-project-react-testing-library/.gitignore",
+  "/home/find_carol/Documentos/Estudo/projetos/sd-015-b-project-react-testing-library/.stylelintignore",
+  "/home/find_carol/Documentos/Estudo/projetos/sd-015-b-project-react-testing-library/.stylelintrc.json",
+  "/home/find_carol/Documentos/Estudo/projetos/sd-015-b-project-react-testing-library/.trybe/requirements.json",
+  "/home/find_carol/Documentos/Estudo/projetos/sd-015-b-project-react-testing-library/README.md",
+  "/home/find_carol/Documentos/Estudo/projetos/sd-015-b-project-react-testing-library/package-lock.json",
+  "/home/find_carol/Documentos/Estudo/projetos/sd-015-b-project-react-testing-library/package.json",
+  "/home/find_carol/Documentos/Estudo/projetos/sd-015-b-project-react-testing-library/public/favicon.ico",
+  "/home/find_carol/Documentos/Estudo/projetos/sd-015-b-project-react-testing-library/public/index.html",
+  "/home/find_carol/Documentos/Estudo/projetos/sd-015-b-project-react-testing-library/public/logo192.png",
+  "/home/find_carol/Documentos/Estudo/projetos/sd-015-b-project-react-testing-library/public/logo512.png",
+  "/home/find_carol/Documentos/Estudo/projetos/sd-015-b-project-react-testing-library/public/manifest.json",
+  "/home/find_carol/Documentos/Estudo/projetos/sd-015-b-project-react-testing-library/public/robots.txt",
+  "/home/find_carol/Documentos/Estudo/projetos/sd-015-b-project-react-testing-library/public/star-icon.svg",
+  "/home/find_carol/Documentos/Estudo/projetos/sd-015-b-project-react-testing-library/src/App.css",
+  "/home/find_carol/Documentos/Estudo/projetos/sd-015-b-project-react-testing-library/src/App.js",
+  "/home/find_carol/Documentos/Estudo/projetos/sd-015-b-project-react-testing-library/src/components/About.js",
+  "/home/find_carol/Documentos/Estudo/projetos/sd-015-b-project-react-testing-library/src/components/Button.js",
+  "/home/find_carol/Documentos/Estudo/projetos/sd-015-b-project-react-testing-library/src/components/FavoritePokemons.js",
+  "/home/find_carol/Documentos/Estudo/projetos/sd-015-b-project-react-testing-library/src/components/NotFound.js",
+  "/home/find_carol/Documentos/Estudo/projetos/sd-015-b-project-react-testing-library/src/components/Pokedex.js",
+  "/home/find_carol/Documentos/Estudo/projetos/sd-015-b-project-react-testing-library/src/components/Pokemon.js",
+  "/home/find_carol/Documentos/Estudo/projetos/sd-015-b-project-react-testing-library/src/components/PokemonDetails.js",
+  "/home/find_carol/Documentos/Estudo/projetos/sd-015-b-project-react-testing-library/src/components/about.css",
+  "/home/find_carol/Documentos/Estudo/projetos/sd-015-b-project-react-testing-library/src/components/button.css",
+  "/home/find_carol/Documentos/Estudo/projetos/sd-015-b-project-react-testing-library/src/components/favorite-pokemons.css",
+  "/home/find_carol/Documentos/Estudo/projetos/sd-015-b-project-react-testing-library/src/components/index.js",
+  "/home/find_carol/Documentos/Estudo/projetos/sd-015-b-project-react-testing-library/src/components/not-found.css",
+  "/home/find_carol/Documentos/Estudo/projetos/sd-015-b-project-react-testing-library/src/components/pokedex.css",
+  "/home/find_carol/Documentos/Estudo/projetos/sd-015-b-project-react-testing-library/src/components/pokemon-details.css",
+  "/home/find_carol/Documentos/Estudo/projetos/sd-015-b-project-react-testing-library/src/components/pokemon.css",
+  "/home/find_carol/Documentos/Estudo/projetos/sd-015-b-project-react-testing-library/src/data.js",
+  "/home/find_carol/Documentos/Estudo/projetos/sd-015-b-project-react-testing-library/src/index.css",
+  "/home/find_carol/Documentos/Estudo/projetos/sd-015-b-project-react-testing-library/src/index.js",
+  "/home/find_carol/Documentos/Estudo/projetos/sd-015-b-project-react-testing-library/src/logo.svg",
+  "/home/find_carol/Documentos/Estudo/projetos/sd-015-b-project-react-testing-library/src/serviceWorker.js",
+  "/home/find_carol/Documentos/Estudo/projetos/sd-015-b-project-react-testing-library/src/services/pokedexService.js",
+  "/home/find_carol/Documentos/Estudo/projetos/sd-015-b-project-react-testing-library/src/setupTests.js",
+  "/home/find_carol/Documentos/Estudo/projetos/sd-015-b-project-react-testing-library/src/tests/About.test.js",
+  "/home/find_carol/Documentos/Estudo/projetos/sd-015-b-project-react-testing-library/src/tests/App.test.js",
+  "/home/find_carol/Documentos/Estudo/projetos/sd-015-b-project-react-testing-library/src/tests/FavoritePokemons.test.js",
+  "/home/find_carol/Documentos/Estudo/projetos/sd-015-b-project-react-testing-library/src/tests/NotFound.test.js",
+  "/home/find_carol/Documentos/Estudo/projetos/sd-015-b-project-react-testing-library/src/tests/Pokedex.test.js",
+  "/home/find_carol/Documentos/Estudo/projetos/sd-015-b-project-react-testing-library/src/tests/Pokemon.test.js",
+  "/home/find_carol/Documentos/Estudo/projetos/sd-015-b-project-react-testing-library/src/tests/PokemonDetails.test.js",
+  "/home/find_carol/Documentos/Estudo/projetos/sd-015-b-project-react-testing-library/src/types/index.js",
+  "/home/find_carol/Documentos/Estudo/projetos/sd-015-b-project-react-testing-library/stryker.conf.json",
+  "/home/find_carol/Documentos/Estudo/projetos/sd-015-b-project-react-testing-library/stryker/About.conf.json",
+  "/home/find_carol/Documentos/Estudo/projetos/sd-015-b-project-react-testing-library/stryker/App.conf.json",
+  "/home/find_carol/Documentos/Estudo/projetos/sd-015-b-project-react-testing-library/stryker/FavoritePokemons.conf.json",
+  "/home/find_carol/Documentos/Estudo/projetos/sd-015-b-project-react-testing-library/stryker/NotFound.conf.json",
+  "/home/find_carol/Documentos/Estudo/projetos/sd-015-b-project-react-testing-library/stryker/Pokedex.conf.json",
+  "/home/find_carol/Documentos/Estudo/projetos/sd-015-b-project-react-testing-library/stryker/Pokemon.conf.json",
+  "/home/find_carol/Documentos/Estudo/projetos/sd-015-b-project-react-testing-library/stryker/PokemonDetails.conf.json",
+  "/home/find_carol/Documentos/Estudo/projetos/sd-015-b-project-react-testing-library/testefalhando.png",
+  "/home/find_carol/Documentos/Estudo/projetos/sd-015-b-project-react-testing-library/testepassando.png",
+  "/home/find_carol/Documentos/Estudo/projetos/sd-015-b-project-react-testing-library/trybe.yml"
+]
+15:38:46 (26912) DEBUG InputFileResolver Files to mutate: [
+  "/home/find_carol/Documentos/Estudo/projetos/sd-015-b-project-react-testing-library/src/App.js",
+  "/home/find_carol/Documentos/Estudo/projetos/sd-015-b-project-react-testing-library/src/components/About.js",
+  "/home/find_carol/Documentos/Estudo/projetos/sd-015-b-project-react-testing-library/src/components/FavoritePokemons.js",
+  "/home/find_carol/Documentos/Estudo/projetos/sd-015-b-project-react-testing-library/src/components/NotFound.js",
+  "/home/find_carol/Documentos/Estudo/projetos/sd-015-b-project-react-testing-library/src/components/Pokedex.js",
+  "/home/find_carol/Documentos/Estudo/projetos/sd-015-b-project-react-testing-library/src/components/Pokemon.js",
+  "/home/find_carol/Documentos/Estudo/projetos/sd-015-b-project-react-testing-library/src/components/PokemonDetails.js"
+]
+15:38:46 (26912) DEBUG TemporaryDirectory Using temp directory "/home/find_carol/Documentos/Estudo/projetos/sd-015-b-project-react-testing-library/.stryker-tmp"
+15:38:46 (26912) DEBUG TestFrameworkOrchestrator The `coverageAnalysis` setting is "off", not hooking into the test framework to achieve performance benefits.
+15:38:46 (26912) INFO InitialTestExecutor Starting initial test run. This may take a while.
+15:38:46 (26912) DEBUG Sandbox Creating a sandbox for files in /home/find_carol/Documentos/Estudo/projetos/sd-015-b-project-react-testing-library/.stryker-tmp/sandbox5523385
+15:38:46 (26912) DEBUG Sandbox Creating test runner 0
+15:38:46 (26912) DEBUG ChildProcessProxy Starting /home/find_carol/Documentos/Estudo/projetos/sd-015-b-project-react-testing-library/node_modules/@stryker-mutator/core/src/test-runner/ChildProcessTestRunnerWorker.js in child process 26928
+15:38:46 (26928) DEBUG ChildProcessProxyWorker Changing current working directory for this process to /home/find_carol/Documentos/Estudo/projetos/sd-015-b-project-react-testing-library/.stryker-tmp/sandbox5523385
+15:38:46 (26928) DEBUG PluginLoader Loading @stryker-mutator/* from /home/find_carol/Documentos/Estudo/projetos/sd-015-b-project-react-testing-library/node_modules/@stryker-mutator
+15:38:46 (26928) DEBUG PluginLoader Loading plugin "/home/find_carol/Documentos/Estudo/projetos/sd-015-b-project-react-testing-library/node_modules/@stryker-mutator/javascript-mutator" (matched with expression @stryker-mutator/*)
+15:38:46 (26928) DEBUG PluginLoader Loading plugin "/home/find_carol/Documentos/Estudo/projetos/sd-015-b-project-react-testing-library/node_modules/@stryker-mutator/jest-runner" (matched with expression @stryker-mutator/*)
+15:38:46 (26928) DEBUG PluginLoader Loading plugins /home/find_carol/Documentos/Estudo/projetos/sd-015-b-project-react-testing-library/node_modules/@stryker-mutator/javascript-mutator
+15:38:47 (26928) DEBUG PluginLoader Loading plugins /home/find_carol/Documentos/Estudo/projetos/sd-015-b-project-react-testing-library/node_modules/@stryker-mutator/jest-runner
+15:38:47 (26928) DEBUG PluginLoader Loading plugins /home/find_carol/Documentos/Estudo/projetos/sd-015-b-project-react-testing-library/node_modules/@stryker-mutator/core/src/reporters/index.js
+15:38:47 (26928) TRACE JestTestRunner Merging file-based config {
+  "roots": [
+    "<rootDir>/src"
+  ],
+  "collectCoverageFrom": [
+    "**/*.{js,jsx}",
+    "!src/index.js",
+    "!src/serviceWorker.js"
+  ],
+  "setupFiles": [
+    "/home/find_carol/Documentos/Estudo/projetos/sd-015-b-project-react-testing-library/node_modules/react-app-polyfill/jsdom.js"
+  ],
+  "setupFilesAfterEnv": [
+    "<rootDir>/src/setupTests.js"
+  ],
+  "testMatch": [
+    "<rootDir>/src/**/__tests__/**/*.{js,jsx,ts,tsx}",
+    "<rootDir>/src/**/*.{spec,test}.{js,jsx,ts,tsx}"
+  ],
+  "testEnvironment": "jest-environment-jsdom-fourteen",
+  "transform": {
+    "^.+\\.(js|jsx|ts|tsx)$": "/home/find_carol/Documentos/Estudo/projetos/sd-015-b-project-react-testing-library/node_modules/react-scripts/config/jest/babelTransform.js",
+    "^.+\\.css$": "/home/find_carol/Documentos/Estudo/projetos/sd-015-b-project-react-testing-library/node_modules/react-scripts/config/jest/cssTransform.js",
+    "^(?!.*\\.(js|jsx|ts|tsx|css|json)$)": "/home/find_carol/Documentos/Estudo/projetos/sd-015-b-project-react-testing-library/node_modules/react-scripts/config/jest/fileTransform.js"
+  },
+  "transformIgnorePatterns": [
+    "[/\\\\]node_modules[/\\\\].+\\.(js|jsx|ts|tsx)$",
+    "^.+\\.module\\.(css|sass|scss)$"
+  ],
+  "modulePaths": [],
+  "moduleNameMapper": {
+    "^react-native$": "react-native-web",
+    "^.+\\.module\\.(css|sass|scss)$": "identity-obj-proxy"
+  },
+  "moduleFileExtensions": [
+    "web.js",
+    "js",
+    "web.ts",
+    "ts",
+    "web.tsx",
+    "tsx",
+    "json",
+    "web.jsx",
+    "jsx",
+    "node"
+  ],
+  "watchPlugins": [
+    "jest-watch-typeahead/filename",
+    "jest-watch-typeahead/testname"
+  ],
+  "rootDir": "/home/find_carol/Documentos/Estudo/projetos/sd-015-b-project-react-testing-library/.stryker-tmp/sandbox5523385"
+} 
+      with custom config {}
+      and default (internal) stryker config [object Object]
+15:38:47 (26928) DEBUG JestTestRunner Running jest with --findRelatedTests flag. Set jest.enableFindRelatedTests to false to run all tests on every mutant.
+15:38:47 (26928) DEBUG JestTestRunner Project root is /home/find_carol/Documentos/Estudo/projetos/sd-015-b-project-react-testing-library/.stryker-tmp/sandbox5523385
+15:38:47 (26912) DEBUG TimeoutDecorator Starting timeout timer (300000 ms) for a test run
+15:38:47 (26928) TRACE JestLessThan25TestAdapter Invoking Jest with config {"roots":["<rootDir>/src"],"collectCoverageFrom":["**/*.{js,jsx}","!src/index.js","!src/serviceWorker.js"],"setupFiles":["/home/find_carol/Documentos/Estudo/projetos/sd-015-b-project-react-testing-library/node_modules/react-app-polyfill/jsdom.js"],"setupFilesAfterEnv":["<rootDir>/src/setupTests.js"],"testMatch":["<rootDir>/src/**/__tests__/**/*.{js,jsx,ts,tsx}","<rootDir>/src/**/*.{spec,test}.{js,jsx,ts,tsx}"],"testEnvironment":"jest-environment-jsdom-fourteen","transform":{"^.+\\.(js|jsx|ts|tsx)$":"/home/find_carol/Documentos/Estudo/projetos/sd-015-b-project-react-testing-library/node_modules/react-scripts/config/jest/babelTransform.js","^.+\\.css$":"/home/find_carol/Documentos/Estudo/projetos/sd-015-b-project-react-testing-library/node_modules/react-scripts/config/jest/cssTransform.js","^(?!.*\\.(js|jsx|ts|tsx|css|json)$)":"/home/find_carol/Documentos/Estudo/projetos/sd-015-b-project-react-testing-library/node_modules/react-scripts/config/jest/fileTransform.js"},"transformIgnorePatterns":["[/\\\\]node_modules[/\\\\].+\\.(js|jsx|ts|tsx)$","^.+\\.module\\.(css|sass|scss)$"],"modulePaths":[],"moduleNameMapper":{"^react-native$":"react-native-web","^.+\\.module\\.(css|sass|scss)$":"identity-obj-proxy"},"moduleFileExtensions":["web.js","js","web.ts","ts","web.tsx","tsx","json","web.jsx","jsx","node"],"watchPlugins":["jest-watch-typeahead/filename","jest-watch-typeahead/testname"],"rootDir":"/home/find_carol/Documentos/Estudo/projetos/sd-015-b-project-react-testing-library/.stryker-tmp/sandbox5523385","collectCoverage":false,"verbose":false,"bail":false,"notify":false,"reporters":[]}
+15:38:55 (26912) DEBUG ChildProcessProxy Disposing of worker process 26928
+15:38:55 (26912) DEBUG ChildProcessProxy Kill 26928
+15:38:55 (26912) INFO InitialTestExecutor Initial test run succeeded. Ran 11 tests in 8 seconds (net 445 ms, overhead 7769 ms).
+15:38:55 (26912) DEBUG BabelParser Using options {"plugins":["asyncGenerators","bigInt","classProperties","dynamicImport","flow","jsx","objectRestSpread",["decorators",{"decoratorsBeforeExport":true}]],"sourceType":"unambiguous"}
+15:38:55 (26912) TRACE JavaScriptMutator Generated mutant for mutator BlockStatement in file /home/find_carol/Documentos/Estudo/projetos/sd-015-b-project-react-testing-library/src/App.js with replacement code "{}"
+15:38:55 (26912) TRACE JavaScriptMutator Generated mutant for mutator BlockStatement in file /home/find_carol/Documentos/Estudo/projetos/sd-015-b-project-react-testing-library/src/App.js with replacement code "{}"
+15:38:55 (26912) TRACE JavaScriptMutator Generated mutant for mutator BlockStatement in file /home/find_carol/Documentos/Estudo/projetos/sd-015-b-project-react-testing-library/src/App.js with replacement code "{}"
+15:38:55 (26912) TRACE JavaScriptMutator Generated mutant for mutator ObjectLiteral in file /home/find_carol/Documentos/Estudo/projetos/sd-015-b-project-react-testing-library/src/App.js with replacement code "{}"
+15:38:55 (26912) TRACE JavaScriptMutator Generated mutant for mutator BlockStatement in file /home/find_carol/Documentos/Estudo/projetos/sd-015-b-project-react-testing-library/src/App.js with replacement code "{}"
+15:38:55 (26912) TRACE JavaScriptMutator Generated mutant for mutator ObjectLiteral in file /home/find_carol/Documentos/Estudo/projetos/sd-015-b-project-react-testing-library/src/App.js with replacement code "{}"
+15:38:55 (26912) TRACE JavaScriptMutator Generated mutant for mutator BlockStatement in file /home/find_carol/Documentos/Estudo/projetos/sd-015-b-project-react-testing-library/src/App.js with replacement code "{}"
+15:38:55 (26912) TRACE JavaScriptMutator Generated mutant for mutator BlockStatement in file /home/find_carol/Documentos/Estudo/projetos/sd-015-b-project-react-testing-library/src/App.js with replacement code "{}"
+15:38:55 (26912) TRACE JavaScriptMutator Generated mutant for mutator ArrowFunction in file /home/find_carol/Documentos/Estudo/projetos/sd-015-b-project-react-testing-library/src/App.js with replacement code "() => undefined"
+15:38:55 (26912) TRACE JavaScriptMutator Generated mutant for mutator BlockStatement in file /home/find_carol/Documentos/Estudo/projetos/sd-015-b-project-react-testing-library/src/App.js with replacement code "{}"
+15:38:55 (26912) TRACE JavaScriptMutator Generated mutant for mutator ArrowFunction in file /home/find_carol/Documentos/Estudo/projetos/sd-015-b-project-react-testing-library/src/App.js with replacement code "() => undefined"
+15:38:55 (26912) TRACE JavaScriptMutator Generated mutant for mutator ArrowFunction in file /home/find_carol/Documentos/Estudo/projetos/sd-015-b-project-react-testing-library/src/App.js with replacement code "() => undefined"
+15:38:55 (26912) TRACE JavaScriptMutator Generated mutant for mutator ArrowFunction in file /home/find_carol/Documentos/Estudo/projetos/sd-015-b-project-react-testing-library/src/App.js with replacement code "() => undefined"
+15:38:55 (26912) TRACE JavaScriptMutator Generated mutant for mutator ArrowFunction in file /home/find_carol/Documentos/Estudo/projetos/sd-015-b-project-react-testing-library/src/App.js with replacement code "() => undefined"
+15:38:55 (26912) TRACE JavaScriptMutator Generated mutant for mutator BlockStatement in file /home/find_carol/Documentos/Estudo/projetos/sd-015-b-project-react-testing-library/src/App.js with replacement code "{}"
+15:38:55 (26912) TRACE JavaScriptMutator Generated mutant for mutator StringLiteral in file /home/find_carol/Documentos/Estudo/projetos/sd-015-b-project-react-testing-library/src/App.js with replacement code """"
+15:38:55 (26912) TRACE JavaScriptMutator Generated mutant for mutator StringLiteral in file /home/find_carol/Documentos/Estudo/projetos/sd-015-b-project-react-testing-library/src/App.js with replacement code """"
+15:38:55 (26912) TRACE JavaScriptMutator Generated mutant for mutator StringLiteral in file /home/find_carol/Documentos/Estudo/projetos/sd-015-b-project-react-testing-library/src/App.js with replacement code """"
+15:38:55 (26912) TRACE JavaScriptMutator Generated mutant for mutator ArrowFunction in file /home/find_carol/Documentos/Estudo/projetos/sd-015-b-project-react-testing-library/src/components/About.js with replacement code "() => undefined"
+15:38:55 (26912) TRACE JavaScriptMutator Generated mutant for mutator ArithmeticOperator in file /home/find_carol/Documentos/Estudo/projetos/sd-015-b-project-react-testing-library/src/components/About.js with replacement code "`About ` - `Pokédex`"
+15:38:55 (26912) TRACE JavaScriptMutator Generated mutant for mutator StringLiteral in file /home/find_carol/Documentos/Estudo/projetos/sd-015-b-project-react-testing-library/src/components/About.js with replacement code """"
+15:38:55 (26912) TRACE JavaScriptMutator Generated mutant for mutator StringLiteral in file /home/find_carol/Documentos/Estudo/projetos/sd-015-b-project-react-testing-library/src/components/About.js with replacement code """"
+15:38:55 (26912) TRACE JavaScriptMutator Generated mutant for mutator StringLiteral in file /home/find_carol/Documentos/Estudo/projetos/sd-015-b-project-react-testing-library/src/components/About.js with replacement code """"
+15:38:55 (26912) TRACE JavaScriptMutator Generated mutant for mutator BlockStatement in file /home/find_carol/Documentos/Estudo/projetos/sd-015-b-project-react-testing-library/src/components/FavoritePokemons.js with replacement code "{}"
+15:38:55 (26912) TRACE JavaScriptMutator Generated mutant for mutator ArithmeticOperator in file /home/find_carol/Documentos/Estudo/projetos/sd-015-b-project-react-testing-library/src/components/FavoritePokemons.js with replacement code "`No favorite ` - `pokemon found`"
+15:38:55 (26912) TRACE JavaScriptMutator Generated mutant for mutator StringLiteral in file /home/find_carol/Documentos/Estudo/projetos/sd-015-b-project-react-testing-library/src/components/FavoritePokemons.js with replacement code """"
+15:38:55 (26912) TRACE JavaScriptMutator Generated mutant for mutator StringLiteral in file /home/find_carol/Documentos/Estudo/projetos/sd-015-b-project-react-testing-library/src/components/FavoritePokemons.js with replacement code """"
+15:38:55 (26912) TRACE JavaScriptMutator Generated mutant for mutator BlockStatement in file /home/find_carol/Documentos/Estudo/projetos/sd-015-b-project-react-testing-library/src/components/FavoritePokemons.js with replacement code "{}"
+15:38:55 (26912) TRACE JavaScriptMutator Generated mutant for mutator BlockStatement in file /home/find_carol/Documentos/Estudo/projetos/sd-015-b-project-react-testing-library/src/components/FavoritePokemons.js with replacement code "{}"
+15:38:55 (26912) TRACE JavaScriptMutator Generated mutant for mutator ArrowFunction in file /home/find_carol/Documentos/Estudo/projetos/sd-015-b-project-react-testing-library/src/components/FavoritePokemons.js with replacement code "() => undefined"
+15:38:55 (26912) TRACE JavaScriptMutator Generated mutant for mutator BlockStatement in file /home/find_carol/Documentos/Estudo/projetos/sd-015-b-project-react-testing-library/src/components/FavoritePokemons.js with replacement code "{}"
+15:38:55 (26912) TRACE JavaScriptMutator Generated mutant for mutator ConditionalExpression in file /home/find_carol/Documentos/Estudo/projetos/sd-015-b-project-react-testing-library/src/components/FavoritePokemons.js with replacement code "true"
+15:38:55 (26912) TRACE JavaScriptMutator Generated mutant for mutator ConditionalExpression in file /home/find_carol/Documentos/Estudo/projetos/sd-015-b-project-react-testing-library/src/components/FavoritePokemons.js with replacement code "false"
+15:38:55 (26912) TRACE JavaScriptMutator Generated mutant for mutator EqualityOperator in file /home/find_carol/Documentos/Estudo/projetos/sd-015-b-project-react-testing-library/src/components/FavoritePokemons.js with replacement code "pokemons.length !== ZERO"
+15:38:55 (26912) TRACE JavaScriptMutator Generated mutant for mutator ObjectLiteral in file /home/find_carol/Documentos/Estudo/projetos/sd-015-b-project-react-testing-library/src/components/FavoritePokemons.js with replacement code "{}"
+15:38:55 (26912) TRACE JavaScriptMutator Generated mutant for mutator ObjectLiteral in file /home/find_carol/Documentos/Estudo/projetos/sd-015-b-project-react-testing-library/src/components/FavoritePokemons.js with replacement code "{}"
+15:38:55 (26912) TRACE JavaScriptMutator Generated mutant for mutator ArrayDeclaration in file /home/find_carol/Documentos/Estudo/projetos/sd-015-b-project-react-testing-library/src/components/FavoritePokemons.js with replacement code "["Stryker was here"]"
+15:38:55 (26912) TRACE JavaScriptMutator Generated mutant for mutator ArrowFunction in file /home/find_carol/Documentos/Estudo/projetos/sd-015-b-project-react-testing-library/src/components/NotFound.js with replacement code "() => undefined"
+15:38:55 (26912) TRACE JavaScriptMutator Generated mutant for mutator ArithmeticOperator in file /home/find_carol/Documentos/Estudo/projetos/sd-015-b-project-react-testing-library/src/components/NotFound.js with replacement code "`Page requested ` - `not found`"
+15:38:55 (26912) TRACE JavaScriptMutator Generated mutant for mutator StringLiteral in file /home/find_carol/Documentos/Estudo/projetos/sd-015-b-project-react-testing-library/src/components/NotFound.js with replacement code """"
+15:38:55 (26912) TRACE JavaScriptMutator Generated mutant for mutator StringLiteral in file /home/find_carol/Documentos/Estudo/projetos/sd-015-b-project-react-testing-library/src/components/NotFound.js with replacement code """"
+15:38:55 (26912) TRACE JavaScriptMutator Generated mutant for mutator StringLiteral in file /home/find_carol/Documentos/Estudo/projetos/sd-015-b-project-react-testing-library/src/components/NotFound.js with replacement code """"
+15:38:55 (26912) TRACE JavaScriptMutator Generated mutant for mutator BlockStatement in file /home/find_carol/Documentos/Estudo/projetos/sd-015-b-project-react-testing-library/src/components/Pokedex.js with replacement code "{}"
+15:38:55 (26912) TRACE JavaScriptMutator Generated mutant for mutator ObjectLiteral in file /home/find_carol/Documentos/Estudo/projetos/sd-015-b-project-react-testing-library/src/components/Pokedex.js with replacement code "{}"
+15:38:55 (26912) TRACE JavaScriptMutator Generated mutant for mutator StringLiteral in file /home/find_carol/Documentos/Estudo/projetos/sd-015-b-project-react-testing-library/src/components/Pokedex.js with replacement code """"
+15:38:55 (26912) TRACE JavaScriptMutator Generated mutant for mutator BlockStatement in file /home/find_carol/Documentos/Estudo/projetos/sd-015-b-project-react-testing-library/src/components/Pokedex.js with replacement code "{}"
+15:38:55 (26912) TRACE JavaScriptMutator Generated mutant for mutator ObjectLiteral in file /home/find_carol/Documentos/Estudo/projetos/sd-015-b-project-react-testing-library/src/components/Pokedex.js with replacement code "{}"
+15:38:55 (26912) TRACE JavaScriptMutator Generated mutant for mutator BlockStatement in file /home/find_carol/Documentos/Estudo/projetos/sd-015-b-project-react-testing-library/src/components/Pokedex.js with replacement code "{}"
+15:38:55 (26912) TRACE JavaScriptMutator Generated mutant for mutator ArrowFunction in file /home/find_carol/Documentos/Estudo/projetos/sd-015-b-project-react-testing-library/src/components/Pokedex.js with replacement code "() => undefined"
+15:38:55 (26912) TRACE JavaScriptMutator Generated mutant for mutator ObjectLiteral in file /home/find_carol/Documentos/Estudo/projetos/sd-015-b-project-react-testing-library/src/components/Pokedex.js with replacement code "{}"
+15:38:55 (26912) TRACE JavaScriptMutator Generated mutant for mutator ArithmeticOperator in file /home/find_carol/Documentos/Estudo/projetos/sd-015-b-project-react-testing-library/src/components/Pokedex.js with replacement code "(state.pokemonIndex + 1) * numberOfPokemons"
+15:38:55 (26912) TRACE JavaScriptMutator Generated mutant for mutator ArithmeticOperator in file /home/find_carol/Documentos/Estudo/projetos/sd-015-b-project-react-testing-library/src/components/Pokedex.js with replacement code "state.pokemonIndex - 1"
+15:38:55 (26912) TRACE JavaScriptMutator Generated mutant for mutator BlockStatement in file /home/find_carol/Documentos/Estudo/projetos/sd-015-b-project-react-testing-library/src/components/Pokedex.js with replacement code "{}"
+15:38:55 (26912) TRACE JavaScriptMutator Generated mutant for mutator BlockStatement in file /home/find_carol/Documentos/Estudo/projetos/sd-015-b-project-react-testing-library/src/components/Pokedex.js with replacement code "{}"
+15:38:55 (26912) TRACE JavaScriptMutator Generated mutant for mutator ConditionalExpression in file /home/find_carol/Documentos/Estudo/projetos/sd-015-b-project-react-testing-library/src/components/Pokedex.js with replacement code "true"
+15:38:55 (26912) TRACE JavaScriptMutator Generated mutant for mutator ConditionalExpression in file /home/find_carol/Documentos/Estudo/projetos/sd-015-b-project-react-testing-library/src/components/Pokedex.js with replacement code "false"
+15:38:55 (26912) TRACE JavaScriptMutator Generated mutant for mutator EqualityOperator in file /home/find_carol/Documentos/Estudo/projetos/sd-015-b-project-react-testing-library/src/components/Pokedex.js with replacement code "filteredType !== 'all'"
+15:38:55 (26912) TRACE JavaScriptMutator Generated mutant for mutator StringLiteral in file /home/find_carol/Documentos/Estudo/projetos/sd-015-b-project-react-testing-library/src/components/Pokedex.js with replacement code """"
+15:38:55 (26912) TRACE JavaScriptMutator Generated mutant for mutator BooleanLiteral in file /home/find_carol/Documentos/Estudo/projetos/sd-015-b-project-react-testing-library/src/components/Pokedex.js with replacement code "false"
+15:38:55 (26912) TRACE JavaScriptMutator Generated mutant for mutator ConditionalExpression in file /home/find_carol/Documentos/Estudo/projetos/sd-015-b-project-react-testing-library/src/components/Pokedex.js with replacement code "true"
+15:38:55 (26912) TRACE JavaScriptMutator Generated mutant for mutator ConditionalExpression in file /home/find_carol/Documentos/Estudo/projetos/sd-015-b-project-react-testing-library/src/components/Pokedex.js with replacement code "false"
+15:38:55 (26912) TRACE JavaScriptMutator Generated mutant for mutator EqualityOperator in file /home/find_carol/Documentos/Estudo/projetos/sd-015-b-project-react-testing-library/src/components/Pokedex.js with replacement code "pokemon.type !== filteredType"
+15:38:55 (26912) TRACE JavaScriptMutator Generated mutant for mutator BlockStatement in file /home/find_carol/Documentos/Estudo/projetos/sd-015-b-project-react-testing-library/src/components/Pokedex.js with replacement code "{}"
+15:38:55 (26912) TRACE JavaScriptMutator Generated mutant for mutator ArrayDeclaration in file /home/find_carol/Documentos/Estudo/projetos/sd-015-b-project-react-testing-library/src/components/Pokedex.js with replacement code "[]"
+15:38:55 (26912) TRACE JavaScriptMutator Generated mutant for mutator ArrowFunction in file /home/find_carol/Documentos/Estudo/projetos/sd-015-b-project-react-testing-library/src/components/Pokedex.js with replacement code "() => undefined"
+15:38:55 (26912) TRACE JavaScriptMutator Generated mutant for mutator ArrayDeclaration in file /home/find_carol/Documentos/Estudo/projetos/sd-015-b-project-react-testing-library/src/components/Pokedex.js with replacement code "[]"
+15:38:55 (26912) TRACE JavaScriptMutator Generated mutant for mutator ArrayDeclaration in file /home/find_carol/Documentos/Estudo/projetos/sd-015-b-project-react-testing-library/src/components/Pokedex.js with replacement code "["Stryker was here"]"
+15:38:55 (26912) TRACE JavaScriptMutator Generated mutant for mutator BlockStatement in file /home/find_carol/Documentos/Estudo/projetos/sd-015-b-project-react-testing-library/src/components/Pokedex.js with replacement code "{}"
+15:38:55 (26912) TRACE JavaScriptMutator Generated mutant for mutator ArrowFunction in file /home/find_carol/Documentos/Estudo/projetos/sd-015-b-project-react-testing-library/src/components/Pokedex.js with replacement code "() => undefined"
+15:38:55 (26912) TRACE JavaScriptMutator Generated mutant for mutator StringLiteral in file /home/find_carol/Documentos/Estudo/projetos/sd-015-b-project-react-testing-library/src/components/Pokedex.js with replacement code """"
+15:38:55 (26912) TRACE JavaScriptMutator Generated mutant for mutator ArrowFunction in file /home/find_carol/Documentos/Estudo/projetos/sd-015-b-project-react-testing-library/src/components/Pokedex.js with replacement code "() => undefined"
+15:38:55 (26912) TRACE JavaScriptMutator Generated mutant for mutator StringLiteral in file /home/find_carol/Documentos/Estudo/projetos/sd-015-b-project-react-testing-library/src/components/Pokedex.js with replacement code """"
+15:38:55 (26912) TRACE JavaScriptMutator Generated mutant for mutator ArrowFunction in file /home/find_carol/Documentos/Estudo/projetos/sd-015-b-project-react-testing-library/src/components/Pokedex.js with replacement code "() => undefined"
+15:38:55 (26912) TRACE JavaScriptMutator Generated mutant for mutator StringLiteral in file /home/find_carol/Documentos/Estudo/projetos/sd-015-b-project-react-testing-library/src/components/Pokedex.js with replacement code """"
+15:38:55 (26912) TRACE JavaScriptMutator Generated mutant for mutator BlockStatement in file /home/find_carol/Documentos/Estudo/projetos/sd-015-b-project-react-testing-library/src/components/Pokedex.js with replacement code "{}"
+15:38:55 (26912) TRACE JavaScriptMutator Generated mutant for mutator ArrowFunction in file /home/find_carol/Documentos/Estudo/projetos/sd-015-b-project-react-testing-library/src/components/Pokedex.js with replacement code "() => undefined"
+15:38:55 (26912) TRACE JavaScriptMutator Generated mutant for mutator ConditionalExpression in file /home/find_carol/Documentos/Estudo/projetos/sd-015-b-project-react-testing-library/src/components/Pokedex.js with replacement code "true"
+15:38:55 (26912) TRACE JavaScriptMutator Generated mutant for mutator ConditionalExpression in file /home/find_carol/Documentos/Estudo/projetos/sd-015-b-project-react-testing-library/src/components/Pokedex.js with replacement code "false"
+15:38:55 (26912) TRACE JavaScriptMutator Generated mutant for mutator EqualityOperator in file /home/find_carol/Documentos/Estudo/projetos/sd-015-b-project-react-testing-library/src/components/Pokedex.js with replacement code "filteredPokemons.length < 1"
+15:38:55 (26912) TRACE JavaScriptMutator Generated mutant for mutator EqualityOperator in file /home/find_carol/Documentos/Estudo/projetos/sd-015-b-project-react-testing-library/src/components/Pokedex.js with replacement code "filteredPokemons.length > 1"
+15:38:55 (26912) TRACE JavaScriptMutator Generated mutant for mutator ObjectLiteral in file /home/find_carol/Documentos/Estudo/projetos/sd-015-b-project-react-testing-library/src/components/Pokedex.js with replacement code "{}"
+15:38:55 (26912) TRACE JavaScriptMutator Generated mutant for mutator BlockStatement in file /home/find_carol/Documentos/Estudo/projetos/sd-015-b-project-react-testing-library/src/components/Pokemon.js with replacement code "{}"
+15:38:55 (26912) TRACE JavaScriptMutator Generated mutant for mutator StringLiteral in file /home/find_carol/Documentos/Estudo/projetos/sd-015-b-project-react-testing-library/src/components/Pokemon.js with replacement code """"
+15:38:55 (26912) TRACE JavaScriptMutator Generated mutant for mutator ConditionalExpression in file /home/find_carol/Documentos/Estudo/projetos/sd-015-b-project-react-testing-library/src/components/Pokemon.js with replacement code "true"
+15:38:55 (26912) TRACE JavaScriptMutator Generated mutant for mutator ConditionalExpression in file /home/find_carol/Documentos/Estudo/projetos/sd-015-b-project-react-testing-library/src/components/Pokemon.js with replacement code "false"
+15:38:55 (26912) TRACE JavaScriptMutator Generated mutant for mutator LogicalOperator in file /home/find_carol/Documentos/Estudo/projetos/sd-015-b-project-react-testing-library/src/components/Pokemon.js with replacement code "showDetailsLink || <Link to={`pokemons/${id}`}>More details</Link>"
+15:38:55 (26912) TRACE JavaScriptMutator Generated mutant for mutator StringLiteral in file /home/find_carol/Documentos/Estudo/projetos/sd-015-b-project-react-testing-library/src/components/Pokemon.js with replacement code """"
+15:38:55 (26912) TRACE JavaScriptMutator Generated mutant for mutator StringLiteral in file /home/find_carol/Documentos/Estudo/projetos/sd-015-b-project-react-testing-library/src/components/Pokemon.js with replacement code """"
+15:38:55 (26912) TRACE JavaScriptMutator Generated mutant for mutator StringLiteral in file /home/find_carol/Documentos/Estudo/projetos/sd-015-b-project-react-testing-library/src/components/Pokemon.js with replacement code """"
+15:38:55 (26912) TRACE JavaScriptMutator Generated mutant for mutator ConditionalExpression in file /home/find_carol/Documentos/Estudo/projetos/sd-015-b-project-react-testing-library/src/components/Pokemon.js with replacement code "true"
+15:38:55 (26912) TRACE JavaScriptMutator Generated mutant for mutator ConditionalExpression in file /home/find_carol/Documentos/Estudo/projetos/sd-015-b-project-react-testing-library/src/components/Pokemon.js with replacement code "false"
+15:38:55 (26912) TRACE JavaScriptMutator Generated mutant for mutator LogicalOperator in file /home/find_carol/Documentos/Estudo/projetos/sd-015-b-project-react-testing-library/src/components/Pokemon.js with replacement code "isFavorite || <img className="favorite-icon" src={`/star-icon.svg`} alt={`${name} is marked as favorite`} />"
+15:38:55 (26912) TRACE JavaScriptMutator Generated mutant for mutator StringLiteral in file /home/find_carol/Documentos/Estudo/projetos/sd-015-b-project-react-testing-library/src/components/Pokemon.js with replacement code """"
+15:38:55 (26912) TRACE JavaScriptMutator Generated mutant for mutator StringLiteral in file /home/find_carol/Documentos/Estudo/projetos/sd-015-b-project-react-testing-library/src/components/Pokemon.js with replacement code """"
+15:38:55 (26912) TRACE JavaScriptMutator Generated mutant for mutator ObjectLiteral in file /home/find_carol/Documentos/Estudo/projetos/sd-015-b-project-react-testing-library/src/components/Pokemon.js with replacement code "{}"
+15:38:55 (26912) TRACE JavaScriptMutator Generated mutant for mutator ObjectLiteral in file /home/find_carol/Documentos/Estudo/projetos/sd-015-b-project-react-testing-library/src/components/Pokemon.js with replacement code "{}"
+15:38:55 (26912) TRACE JavaScriptMutator Generated mutant for mutator BooleanLiteral in file /home/find_carol/Documentos/Estudo/projetos/sd-015-b-project-react-testing-library/src/components/Pokemon.js with replacement code "false"
+15:38:55 (26912) TRACE JavaScriptMutator Generated mutant for mutator BlockStatement in file /home/find_carol/Documentos/Estudo/projetos/sd-015-b-project-react-testing-library/src/components/PokemonDetails.js with replacement code "{}"
+15:38:55 (26912) TRACE JavaScriptMutator Generated mutant for mutator ArithmeticOperator in file /home/find_carol/Documentos/Estudo/projetos/sd-015-b-project-react-testing-library/src/components/PokemonDetails.js with replacement code "`Game Locations of ` - `${name}`"
+15:38:55 (26912) TRACE JavaScriptMutator Generated mutant for mutator StringLiteral in file /home/find_carol/Documentos/Estudo/projetos/sd-015-b-project-react-testing-library/src/components/PokemonDetails.js with replacement code """"
+15:38:55 (26912) TRACE JavaScriptMutator Generated mutant for mutator StringLiteral in file /home/find_carol/Documentos/Estudo/projetos/sd-015-b-project-react-testing-library/src/components/PokemonDetails.js with replacement code """"
+15:38:55 (26912) TRACE JavaScriptMutator Generated mutant for mutator ArrowFunction in file /home/find_carol/Documentos/Estudo/projetos/sd-015-b-project-react-testing-library/src/components/PokemonDetails.js with replacement code "() => undefined"
+15:38:55 (26912) TRACE JavaScriptMutator Generated mutant for mutator StringLiteral in file /home/find_carol/Documentos/Estudo/projetos/sd-015-b-project-react-testing-library/src/components/PokemonDetails.js with replacement code """"
+15:38:55 (26912) TRACE JavaScriptMutator Generated mutant for mutator ArithmeticOperator in file /home/find_carol/Documentos/Estudo/projetos/sd-015-b-project-react-testing-library/src/components/PokemonDetails.js with replacement code "`${name} ` - `location`"
+15:38:55 (26912) TRACE JavaScriptMutator Generated mutant for mutator StringLiteral in file /home/find_carol/Documentos/Estudo/projetos/sd-015-b-project-react-testing-library/src/components/PokemonDetails.js with replacement code """"
+15:38:55 (26912) TRACE JavaScriptMutator Generated mutant for mutator StringLiteral in file /home/find_carol/Documentos/Estudo/projetos/sd-015-b-project-react-testing-library/src/components/PokemonDetails.js with replacement code """"
+15:38:55 (26912) TRACE JavaScriptMutator Generated mutant for mutator BlockStatement in file /home/find_carol/Documentos/Estudo/projetos/sd-015-b-project-react-testing-library/src/components/PokemonDetails.js with replacement code "{}"
+15:38:55 (26912) TRACE JavaScriptMutator Generated mutant for mutator StringLiteral in file /home/find_carol/Documentos/Estudo/projetos/sd-015-b-project-react-testing-library/src/components/PokemonDetails.js with replacement code """"
+15:38:55 (26912) TRACE JavaScriptMutator Generated mutant for mutator StringLiteral in file /home/find_carol/Documentos/Estudo/projetos/sd-015-b-project-react-testing-library/src/components/PokemonDetails.js with replacement code """"
+15:38:55 (26912) TRACE JavaScriptMutator Generated mutant for mutator BlockStatement in file /home/find_carol/Documentos/Estudo/projetos/sd-015-b-project-react-testing-library/src/components/PokemonDetails.js with replacement code "{}"
+15:38:55 (26912) TRACE JavaScriptMutator Generated mutant for mutator BlockStatement in file /home/find_carol/Documentos/Estudo/projetos/sd-015-b-project-react-testing-library/src/components/PokemonDetails.js with replacement code "{}"
+15:38:55 (26912) TRACE JavaScriptMutator Generated mutant for mutator ArrowFunction in file /home/find_carol/Documentos/Estudo/projetos/sd-015-b-project-react-testing-library/src/components/PokemonDetails.js with replacement code "() => undefined"
+15:38:55 (26912) TRACE JavaScriptMutator Generated mutant for mutator ConditionalExpression in file /home/find_carol/Documentos/Estudo/projetos/sd-015-b-project-react-testing-library/src/components/PokemonDetails.js with replacement code "true"
+15:38:55 (26912) TRACE JavaScriptMutator Generated mutant for mutator ConditionalExpression in file /home/find_carol/Documentos/Estudo/projetos/sd-015-b-project-react-testing-library/src/components/PokemonDetails.js with replacement code "false"
+15:38:55 (26912) TRACE JavaScriptMutator Generated mutant for mutator EqualityOperator in file /home/find_carol/Documentos/Estudo/projetos/sd-015-b-project-react-testing-library/src/components/PokemonDetails.js with replacement code "id !== givenId"
+15:38:55 (26912) TRACE JavaScriptMutator Generated mutant for mutator BlockStatement in file /home/find_carol/Documentos/Estudo/projetos/sd-015-b-project-react-testing-library/src/components/PokemonDetails.js with replacement code "{}"
+15:38:55 (26912) TRACE JavaScriptMutator Generated mutant for mutator StringLiteral in file /home/find_carol/Documentos/Estudo/projetos/sd-015-b-project-react-testing-library/src/components/PokemonDetails.js with replacement code """"
+15:38:55 (26912) TRACE JavaScriptMutator Generated mutant for mutator ArrowFunction in file /home/find_carol/Documentos/Estudo/projetos/sd-015-b-project-react-testing-library/src/components/PokemonDetails.js with replacement code "() => undefined"
+15:38:55 (26912) TRACE JavaScriptMutator Generated mutant for mutator BlockStatement in file /home/find_carol/Documentos/Estudo/projetos/sd-015-b-project-react-testing-library/src/components/PokemonDetails.js with replacement code "{}"
+15:38:55 (26912) TRACE JavaScriptMutator Generated mutant for mutator ArithmeticOperator in file /home/find_carol/Documentos/Estudo/projetos/sd-015-b-project-react-testing-library/src/components/PokemonDetails.js with replacement code "`${pokemon.name} ` - `Details`"
+15:38:55 (26912) TRACE JavaScriptMutator Generated mutant for mutator StringLiteral in file /home/find_carol/Documentos/Estudo/projetos/sd-015-b-project-react-testing-library/src/components/PokemonDetails.js with replacement code """"
+15:38:55 (26912) TRACE JavaScriptMutator Generated mutant for mutator StringLiteral in file /home/find_carol/Documentos/Estudo/projetos/sd-015-b-project-react-testing-library/src/components/PokemonDetails.js with replacement code """"
+15:38:55 (26912) TRACE JavaScriptMutator Generated mutant for mutator BooleanLiteral in file /home/find_carol/Documentos/Estudo/projetos/sd-015-b-project-react-testing-library/src/components/PokemonDetails.js with replacement code "true"
+15:38:55 (26912) TRACE JavaScriptMutator Generated mutant for mutator ObjectLiteral in file /home/find_carol/Documentos/Estudo/projetos/sd-015-b-project-react-testing-library/src/components/PokemonDetails.js with replacement code "{}"
+15:38:55 (26912) TRACE JavaScriptMutator Generated mutant for mutator ObjectLiteral in file /home/find_carol/Documentos/Estudo/projetos/sd-015-b-project-react-testing-library/src/components/PokemonDetails.js with replacement code "{}"
+15:38:55 (26912) TRACE JavaScriptMutator Generated mutant for mutator ObjectLiteral in file /home/find_carol/Documentos/Estudo/projetos/sd-015-b-project-react-testing-library/src/components/PokemonDetails.js with replacement code "{}"
+15:38:55 (26912) INFO MutatorFacade 32 Mutant(s) generated (94 Mutant(s) excluded)
+15:38:55 (26912) INFO SandboxPool Creating 12 test runners (based on CPU count)
+15:38:55 (26912) DEBUG Sandbox Creating a sandbox for files in /home/find_carol/Documentos/Estudo/projetos/sd-015-b-project-react-testing-library/.stryker-tmp/sandbox5219006
+15:38:55 (26912) DEBUG Sandbox Creating a sandbox for files in /home/find_carol/Documentos/Estudo/projetos/sd-015-b-project-react-testing-library/.stryker-tmp/sandbox8872959
+15:38:55 (26912) DEBUG Sandbox Creating test runner 0
+15:38:55 (26912) DEBUG ChildProcessProxy Starting /home/find_carol/Documentos/Estudo/projetos/sd-015-b-project-react-testing-library/node_modules/@stryker-mutator/core/src/test-runner/ChildProcessTestRunnerWorker.js in child process 27019
+15:38:55 (26912) DEBUG Sandbox Creating test runner 1
+15:38:55 (26912) DEBUG ChildProcessProxy Starting /home/find_carol/Documentos/Estudo/projetos/sd-015-b-project-react-testing-library/node_modules/@stryker-mutator/core/src/test-runner/ChildProcessTestRunnerWorker.js in child process 27025
+15:38:56 (26912) DEBUG Sandbox Creating a sandbox for files in /home/find_carol/Documentos/Estudo/projetos/sd-015-b-project-react-testing-library/.stryker-tmp/sandbox1384923
+15:38:56 (27025) DEBUG ChildProcessProxyWorker Changing current working directory for this process to /home/find_carol/Documentos/Estudo/projetos/sd-015-b-project-react-testing-library/.stryker-tmp/sandbox8872959
+15:38:56 (27025) DEBUG PluginLoader Loading @stryker-mutator/* from /home/find_carol/Documentos/Estudo/projetos/sd-015-b-project-react-testing-library/node_modules/@stryker-mutator
+15:38:56 (27025) DEBUG PluginLoader Loading plugin "/home/find_carol/Documentos/Estudo/projetos/sd-015-b-project-react-testing-library/node_modules/@stryker-mutator/javascript-mutator" (matched with expression @stryker-mutator/*)
+15:38:56 (27025) DEBUG PluginLoader Loading plugin "/home/find_carol/Documentos/Estudo/projetos/sd-015-b-project-react-testing-library/node_modules/@stryker-mutator/jest-runner" (matched with expression @stryker-mutator/*)
+15:38:56 (27025) DEBUG PluginLoader Loading plugins /home/find_carol/Documentos/Estudo/projetos/sd-015-b-project-react-testing-library/node_modules/@stryker-mutator/javascript-mutator
+15:38:56 (27025) DEBUG PluginLoader Loading plugins /home/find_carol/Documentos/Estudo/projetos/sd-015-b-project-react-testing-library/node_modules/@stryker-mutator/jest-runner
+15:38:56 (27025) DEBUG PluginLoader Loading plugins /home/find_carol/Documentos/Estudo/projetos/sd-015-b-project-react-testing-library/node_modules/@stryker-mutator/core/src/reporters/index.js
+15:38:56 (27025) TRACE JestTestRunner Merging file-based config {
+  "roots": [
+    "<rootDir>/src"
+  ],
+  "collectCoverageFrom": [
+    "**/*.{js,jsx}",
+    "!src/index.js",
+    "!src/serviceWorker.js"
+  ],
+  "setupFiles": [
+    "/home/find_carol/Documentos/Estudo/projetos/sd-015-b-project-react-testing-library/node_modules/react-app-polyfill/jsdom.js"
+  ],
+  "setupFilesAfterEnv": [
+    "<rootDir>/src/setupTests.js"
+  ],
+  "testMatch": [
+    "<rootDir>/src/**/__tests__/**/*.{js,jsx,ts,tsx}",
+    "<rootDir>/src/**/*.{spec,test}.{js,jsx,ts,tsx}"
+  ],
+  "testEnvironment": "jest-environment-jsdom-fourteen",
+  "transform": {
+    "^.+\\.(js|jsx|ts|tsx)$": "/home/find_carol/Documentos/Estudo/projetos/sd-015-b-project-react-testing-library/node_modules/react-scripts/config/jest/babelTransform.js",
+    "^.+\\.css$": "/home/find_carol/Documentos/Estudo/projetos/sd-015-b-project-react-testing-library/node_modules/react-scripts/config/jest/cssTransform.js",
+    "^(?!.*\\.(js|jsx|ts|tsx|css|json)$)": "/home/find_carol/Documentos/Estudo/projetos/sd-015-b-project-react-testing-library/node_modules/react-scripts/config/jest/fileTransform.js"
+  },
+  "transformIgnorePatterns": [
+    "[/\\\\]node_modules[/\\\\].+\\.(js|jsx|ts|tsx)$",
+    "^.+\\.module\\.(css|sass|scss)$"
+  ],
+  "modulePaths": [],
+  "moduleNameMapper": {
+    "^react-native$": "react-native-web",
+    "^.+\\.module\\.(css|sass|scss)$": "identity-obj-proxy"
+  },
+  "moduleFileExtensions": [
+    "web.js",
+    "js",
+    "web.ts",
+    "ts",
+    "web.tsx",
+    "tsx",
+    "json",
+    "web.jsx",
+    "jsx",
+    "node"
+  ],
+  "watchPlugins": [
+    "jest-watch-typeahead/filename",
+    "jest-watch-typeahead/testname"
+  ],
+  "rootDir": "/home/find_carol/Documentos/Estudo/projetos/sd-015-b-project-react-testing-library/.stryker-tmp/sandbox8872959"
+} 
+      with custom config {}
+      and default (internal) stryker config [object Object]
+15:38:56 (27025) DEBUG JestTestRunner Running jest with --findRelatedTests flag. Set jest.enableFindRelatedTests to false to run all tests on every mutant.
+15:38:56 (27025) DEBUG JestTestRunner Project root is /home/find_carol/Documentos/Estudo/projetos/sd-015-b-project-react-testing-library/.stryker-tmp/sandbox8872959
+15:38:56 (26912) DEBUG TimeoutDecorator Starting timeout timer (13436.5 ms) for a test run
+15:38:56 (27019) DEBUG ChildProcessProxyWorker Changing current working directory for this process to /home/find_carol/Documentos/Estudo/projetos/sd-015-b-project-react-testing-library/.stryker-tmp/sandbox5219006
+15:38:56 (27019) DEBUG PluginLoader Loading @stryker-mutator/* from /home/find_carol/Documentos/Estudo/projetos/sd-015-b-project-react-testing-library/node_modules/@stryker-mutator
+15:38:56 (27019) DEBUG PluginLoader Loading plugin "/home/find_carol/Documentos/Estudo/projetos/sd-015-b-project-react-testing-library/node_modules/@stryker-mutator/javascript-mutator" (matched with expression @stryker-mutator/*)
+15:38:56 (27019) DEBUG PluginLoader Loading plugin "/home/find_carol/Documentos/Estudo/projetos/sd-015-b-project-react-testing-library/node_modules/@stryker-mutator/jest-runner" (matched with expression @stryker-mutator/*)
+15:38:56 (27019) DEBUG PluginLoader Loading plugins /home/find_carol/Documentos/Estudo/projetos/sd-015-b-project-react-testing-library/node_modules/@stryker-mutator/javascript-mutator
+15:38:56 (27019) DEBUG PluginLoader Loading plugins /home/find_carol/Documentos/Estudo/projetos/sd-015-b-project-react-testing-library/node_modules/@stryker-mutator/jest-runner
+15:38:56 (27019) DEBUG PluginLoader Loading plugins /home/find_carol/Documentos/Estudo/projetos/sd-015-b-project-react-testing-library/node_modules/@stryker-mutator/core/src/reporters/index.js
+15:38:56 (27019) TRACE JestTestRunner Merging file-based config {
+  "roots": [
+    "<rootDir>/src"
+  ],
+  "collectCoverageFrom": [
+    "**/*.{js,jsx}",
+    "!src/index.js",
+    "!src/serviceWorker.js"
+  ],
+  "setupFiles": [
+    "/home/find_carol/Documentos/Estudo/projetos/sd-015-b-project-react-testing-library/node_modules/react-app-polyfill/jsdom.js"
+  ],
+  "setupFilesAfterEnv": [
+    "<rootDir>/src/setupTests.js"
+  ],
+  "testMatch": [
+    "<rootDir>/src/**/__tests__/**/*.{js,jsx,ts,tsx}",
+    "<rootDir>/src/**/*.{spec,test}.{js,jsx,ts,tsx}"
+  ],
+  "testEnvironment": "jest-environment-jsdom-fourteen",
+  "transform": {
+    "^.+\\.(js|jsx|ts|tsx)$": "/home/find_carol/Documentos/Estudo/projetos/sd-015-b-project-react-testing-library/node_modules/react-scripts/config/jest/babelTransform.js",
+    "^.+\\.css$": "/home/find_carol/Documentos/Estudo/projetos/sd-015-b-project-react-testing-library/node_modules/react-scripts/config/jest/cssTransform.js",
+    "^(?!.*\\.(js|jsx|ts|tsx|css|json)$)": "/home/find_carol/Documentos/Estudo/projetos/sd-015-b-project-react-testing-library/node_modules/react-scripts/config/jest/fileTransform.js"
+  },
+  "transformIgnorePatterns": [
+    "[/\\\\]node_modules[/\\\\].+\\.(js|jsx|ts|tsx)$",
+    "^.+\\.module\\.(css|sass|scss)$"
+  ],
+  "modulePaths": [],
+  "moduleNameMapper": {
+    "^react-native$": "react-native-web",
+    "^.+\\.module\\.(css|sass|scss)$": "identity-obj-proxy"
+  },
+  "moduleFileExtensions": [
+    "web.js",
+    "js",
+    "web.ts",
+    "ts",
+    "web.tsx",
+    "tsx",
+    "json",
+    "web.jsx",
+    "jsx",
+    "node"
+  ],
+  "watchPlugins": [
+    "jest-watch-typeahead/filename",
+    "jest-watch-typeahead/testname"
+  ],
+  "rootDir": "/home/find_carol/Documentos/Estudo/projetos/sd-015-b-project-react-testing-library/.stryker-tmp/sandbox5219006"
+} 
+      with custom config {}
+      and default (internal) stryker config [object Object]
+15:38:56 (27019) DEBUG JestTestRunner Running jest with --findRelatedTests flag. Set jest.enableFindRelatedTests to false to run all tests on every mutant.
+15:38:56 (27019) DEBUG JestTestRunner Project root is /home/find_carol/Documentos/Estudo/projetos/sd-015-b-project-react-testing-library/.stryker-tmp/sandbox5219006
+15:38:56 (26912) DEBUG Sandbox Creating a sandbox for files in /home/find_carol/Documentos/Estudo/projetos/sd-015-b-project-react-testing-library/.stryker-tmp/sandbox9883167
+15:38:56 (26912) DEBUG Sandbox Creating test runner 2
+15:38:56 (26912) DEBUG ChildProcessProxy Starting /home/find_carol/Documentos/Estudo/projetos/sd-015-b-project-react-testing-library/node_modules/@stryker-mutator/core/src/test-runner/ChildProcessTestRunnerWorker.js in child process 27057
+15:38:56 (27025) TRACE JestLessThan25TestAdapter Invoking Jest with config {"roots":["<rootDir>/src"],"collectCoverageFrom":["**/*.{js,jsx}","!src/index.js","!src/serviceWorker.js"],"setupFiles":["/home/find_carol/Documentos/Estudo/projetos/sd-015-b-project-react-testing-library/node_modules/react-app-polyfill/jsdom.js"],"setupFilesAfterEnv":["<rootDir>/src/setupTests.js"],"testMatch":["<rootDir>/src/**/__tests__/**/*.{js,jsx,ts,tsx}","<rootDir>/src/**/*.{spec,test}.{js,jsx,ts,tsx}"],"testEnvironment":"jest-environment-jsdom-fourteen","transform":{"^.+\\.(js|jsx|ts|tsx)$":"/home/find_carol/Documentos/Estudo/projetos/sd-015-b-project-react-testing-library/node_modules/react-scripts/config/jest/babelTransform.js","^.+\\.css$":"/home/find_carol/Documentos/Estudo/projetos/sd-015-b-project-react-testing-library/node_modules/react-scripts/config/jest/cssTransform.js","^(?!.*\\.(js|jsx|ts|tsx|css|json)$)":"/home/find_carol/Documentos/Estudo/projetos/sd-015-b-project-react-testing-library/node_modules/react-scripts/config/jest/fileTransform.js"},"transformIgnorePatterns":["[/\\\\]node_modules[/\\\\].+\\.(js|jsx|ts|tsx)$","^.+\\.module\\.(css|sass|scss)$"],"modulePaths":[],"moduleNameMapper":{"^react-native$":"react-native-web","^.+\\.module\\.(css|sass|scss)$":"identity-obj-proxy"},"moduleFileExtensions":["web.js","js","web.ts","ts","web.tsx","tsx","json","web.jsx","jsx","node"],"watchPlugins":["jest-watch-typeahead/filename","jest-watch-typeahead/testname"],"rootDir":"/home/find_carol/Documentos/Estudo/projetos/sd-015-b-project-react-testing-library/.stryker-tmp/sandbox8872959","collectCoverage":false,"verbose":false,"bail":false,"notify":false,"reporters":[]}
+15:38:56 (27025) TRACE JestLessThan25TestAdapter Only running tests related to /home/find_carol/Documentos/Estudo/projetos/sd-015-b-project-react-testing-library/.stryker-tmp/sandbox8872959/src/App.js
+15:38:56 (26912) DEBUG TimeoutDecorator Starting timeout timer (13436.5 ms) for a test run
+15:38:56 (27019) TRACE JestLessThan25TestAdapter Invoking Jest with config {"roots":["<rootDir>/src"],"collectCoverageFrom":["**/*.{js,jsx}","!src/index.js","!src/serviceWorker.js"],"setupFiles":["/home/find_carol/Documentos/Estudo/projetos/sd-015-b-project-react-testing-library/node_modules/react-app-polyfill/jsdom.js"],"setupFilesAfterEnv":["<rootDir>/src/setupTests.js"],"testMatch":["<rootDir>/src/**/__tests__/**/*.{js,jsx,ts,tsx}","<rootDir>/src/**/*.{spec,test}.{js,jsx,ts,tsx}"],"testEnvironment":"jest-environment-jsdom-fourteen","transform":{"^.+\\.(js|jsx|ts|tsx)$":"/home/find_carol/Documentos/Estudo/projetos/sd-015-b-project-react-testing-library/node_modules/react-scripts/config/jest/babelTransform.js","^.+\\.css$":"/home/find_carol/Documentos/Estudo/projetos/sd-015-b-project-react-testing-library/node_modules/react-scripts/config/jest/cssTransform.js","^(?!.*\\.(js|jsx|ts|tsx|css|json)$)":"/home/find_carol/Documentos/Estudo/projetos/sd-015-b-project-react-testing-library/node_modules/react-scripts/config/jest/fileTransform.js"},"transformIgnorePatterns":["[/\\\\]node_modules[/\\\\].+\\.(js|jsx|ts|tsx)$","^.+\\.module\\.(css|sass|scss)$"],"modulePaths":[],"moduleNameMapper":{"^react-native$":"react-native-web","^.+\\.module\\.(css|sass|scss)$":"identity-obj-proxy"},"moduleFileExtensions":["web.js","js","web.ts","ts","web.tsx","tsx","json","web.jsx","jsx","node"],"watchPlugins":["jest-watch-typeahead/filename","jest-watch-typeahead/testname"],"rootDir":"/home/find_carol/Documentos/Estudo/projetos/sd-015-b-project-react-testing-library/.stryker-tmp/sandbox5219006","collectCoverage":false,"verbose":false,"bail":false,"notify":false,"reporters":[]}
+15:38:56 (27019) TRACE JestLessThan25TestAdapter Only running tests related to /home/find_carol/Documentos/Estudo/projetos/sd-015-b-project-react-testing-library/.stryker-tmp/sandbox5219006/src/App.js
+15:38:56 (26912) DEBUG Sandbox Creating test runner 3
+15:38:56 (26912) DEBUG ChildProcessProxy Starting /home/find_carol/Documentos/Estudo/projetos/sd-015-b-project-react-testing-library/node_modules/@stryker-mutator/core/src/test-runner/ChildProcessTestRunnerWorker.js in child process 27064
+15:38:57 (26912) DEBUG Sandbox Creating a sandbox for files in /home/find_carol/Documentos/Estudo/projetos/sd-015-b-project-react-testing-library/.stryker-tmp/sandbox2857203
+15:38:56 (27057) DEBUG ChildProcessProxyWorker Changing current working directory for this process to /home/find_carol/Documentos/Estudo/projetos/sd-015-b-project-react-testing-library/.stryker-tmp/sandbox1384923
+15:38:56 (27057) DEBUG PluginLoader Loading @stryker-mutator/* from /home/find_carol/Documentos/Estudo/projetos/sd-015-b-project-react-testing-library/node_modules/@stryker-mutator
+15:38:56 (27057) DEBUG PluginLoader Loading plugin "/home/find_carol/Documentos/Estudo/projetos/sd-015-b-project-react-testing-library/node_modules/@stryker-mutator/javascript-mutator" (matched with expression @stryker-mutator/*)
+15:38:56 (27057) DEBUG PluginLoader Loading plugin "/home/find_carol/Documentos/Estudo/projetos/sd-015-b-project-react-testing-library/node_modules/@stryker-mutator/jest-runner" (matched with expression @stryker-mutator/*)
+15:38:56 (27057) DEBUG PluginLoader Loading plugins /home/find_carol/Documentos/Estudo/projetos/sd-015-b-project-react-testing-library/node_modules/@stryker-mutator/javascript-mutator
+15:38:56 (27057) DEBUG PluginLoader Loading plugins /home/find_carol/Documentos/Estudo/projetos/sd-015-b-project-react-testing-library/node_modules/@stryker-mutator/jest-runner
+15:38:56 (27057) DEBUG PluginLoader Loading plugins /home/find_carol/Documentos/Estudo/projetos/sd-015-b-project-react-testing-library/node_modules/@stryker-mutator/core/src/reporters/index.js
+15:38:56 (27057) TRACE JestTestRunner Merging file-based config {
+  "roots": [
+    "<rootDir>/src"
+  ],
+  "collectCoverageFrom": [
+    "**/*.{js,jsx}",
+    "!src/index.js",
+    "!src/serviceWorker.js"
+  ],
+  "setupFiles": [
+    "/home/find_carol/Documentos/Estudo/projetos/sd-015-b-project-react-testing-library/node_modules/react-app-polyfill/jsdom.js"
+  ],
+  "setupFilesAfterEnv": [
+    "<rootDir>/src/setupTests.js"
+  ],
+  "testMatch": [
+    "<rootDir>/src/**/__tests__/**/*.{js,jsx,ts,tsx}",
+    "<rootDir>/src/**/*.{spec,test}.{js,jsx,ts,tsx}"
+  ],
+  "testEnvironment": "jest-environment-jsdom-fourteen",
+  "transform": {
+    "^.+\\.(js|jsx|ts|tsx)$": "/home/find_carol/Documentos/Estudo/projetos/sd-015-b-project-react-testing-library/node_modules/react-scripts/config/jest/babelTransform.js",
+    "^.+\\.css$": "/home/find_carol/Documentos/Estudo/projetos/sd-015-b-project-react-testing-library/node_modules/react-scripts/config/jest/cssTransform.js",
+    "^(?!.*\\.(js|jsx|ts|tsx|css|json)$)": "/home/find_carol/Documentos/Estudo/projetos/sd-015-b-project-react-testing-library/node_modules/react-scripts/config/jest/fileTransform.js"
+  },
+  "transformIgnorePatterns": [
+    "[/\\\\]node_modules[/\\\\].+\\.(js|jsx|ts|tsx)$",
+    "^.+\\.module\\.(css|sass|scss)$"
+  ],
+  "modulePaths": [],
+  "moduleNameMapper": {
+    "^react-native$": "react-native-web",
+    "^.+\\.module\\.(css|sass|scss)$": "identity-obj-proxy"
+  },
+  "moduleFileExtensions": [
+    "web.js",
+    "js",
+    "web.ts",
+    "ts",
+    "web.tsx",
+    "tsx",
+    "json",
+    "web.jsx",
+    "jsx",
+    "node"
+  ],
+  "watchPlugins": [
+    "jest-watch-typeahead/filename",
+    "jest-watch-typeahead/testname"
+  ],
+  "rootDir": "/home/find_carol/Documentos/Estudo/projetos/sd-015-b-project-react-testing-library/.stryker-tmp/sandbox1384923"
+} 
+      with custom config {}
+      and default (internal) stryker config [object Object]
+15:38:56 (27057) DEBUG JestTestRunner Running jest with --findRelatedTests flag. Set jest.enableFindRelatedTests to false to run all tests on every mutant.
+15:38:56 (27057) DEBUG JestTestRunner Project root is /home/find_carol/Documentos/Estudo/projetos/sd-015-b-project-react-testing-library/.stryker-tmp/sandbox1384923
+15:38:56 (27064) DEBUG ChildProcessProxyWorker Changing current working directory for this process to /home/find_carol/Documentos/Estudo/projetos/sd-015-b-project-react-testing-library/.stryker-tmp/sandbox9883167
+15:38:56 (27064) DEBUG PluginLoader Loading @stryker-mutator/* from /home/find_carol/Documentos/Estudo/projetos/sd-015-b-project-react-testing-library/node_modules/@stryker-mutator
+15:38:56 (27064) DEBUG PluginLoader Loading plugin "/home/find_carol/Documentos/Estudo/projetos/sd-015-b-project-react-testing-library/node_modules/@stryker-mutator/javascript-mutator" (matched with expression @stryker-mutator/*)
+15:38:56 (27064) DEBUG PluginLoader Loading plugin "/home/find_carol/Documentos/Estudo/projetos/sd-015-b-project-react-testing-library/node_modules/@stryker-mutator/jest-runner" (matched with expression @stryker-mutator/*)
+15:38:56 (27064) DEBUG PluginLoader Loading plugins /home/find_carol/Documentos/Estudo/projetos/sd-015-b-project-react-testing-library/node_modules/@stryker-mutator/javascript-mutator
+15:38:56 (27064) DEBUG PluginLoader Loading plugins /home/find_carol/Documentos/Estudo/projetos/sd-015-b-project-react-testing-library/node_modules/@stryker-mutator/jest-runner
+15:38:56 (27064) DEBUG PluginLoader Loading plugins /home/find_carol/Documentos/Estudo/projetos/sd-015-b-project-react-testing-library/node_modules/@stryker-mutator/core/src/reporters/index.js
+15:38:57 (27064) TRACE JestTestRunner Merging file-based config {
+  "roots": [
+    "<rootDir>/src"
+  ],
+  "collectCoverageFrom": [
+    "**/*.{js,jsx}",
+    "!src/index.js",
+    "!src/serviceWorker.js"
+  ],
+  "setupFiles": [
+    "/home/find_carol/Documentos/Estudo/projetos/sd-015-b-project-react-testing-library/node_modules/react-app-polyfill/jsdom.js"
+  ],
+  "setupFilesAfterEnv": [
+    "<rootDir>/src/setupTests.js"
+  ],
+  "testMatch": [
+    "<rootDir>/src/**/__tests__/**/*.{js,jsx,ts,tsx}",
+    "<rootDir>/src/**/*.{spec,test}.{js,jsx,ts,tsx}"
+  ],
+  "testEnvironment": "jest-environment-jsdom-fourteen",
+  "transform": {
+    "^.+\\.(js|jsx|ts|tsx)$": "/home/find_carol/Documentos/Estudo/projetos/sd-015-b-project-react-testing-library/node_modules/react-scripts/config/jest/babelTransform.js",
+    "^.+\\.css$": "/home/find_carol/Documentos/Estudo/projetos/sd-015-b-project-react-testing-library/node_modules/react-scripts/config/jest/cssTransform.js",
+    "^(?!.*\\.(js|jsx|ts|tsx|css|json)$)": "/home/find_carol/Documentos/Estudo/projetos/sd-015-b-project-react-testing-library/node_modules/react-scripts/config/jest/fileTransform.js"
+  },
+  "transformIgnorePatterns": [
+    "[/\\\\]node_modules[/\\\\].+\\.(js|jsx|ts|tsx)$",
+    "^.+\\.module\\.(css|sass|scss)$"
+  ],
+  "modulePaths": [],
+  "moduleNameMapper": {
+    "^react-native$": "react-native-web",
+    "^.+\\.module\\.(css|sass|scss)$": "identity-obj-proxy"
+  },
+  "moduleFileExtensions": [
+    "web.js",
+    "js",
+    "web.ts",
+    "ts",
+    "web.tsx",
+    "tsx",
+    "json",
+    "web.jsx",
+    "jsx",
+    "node"
+  ],
+  "watchPlugins": [
+    "jest-watch-typeahead/filename",
+    "jest-watch-typeahead/testname"
+  ],
+  "rootDir": "/home/find_carol/Documentos/Estudo/projetos/sd-015-b-project-react-testing-library/.stryker-tmp/sandbox9883167"
+} 
+      with custom config {}
+      and default (internal) stryker config [object Object]
+15:38:57 (26912) DEBUG TimeoutDecorator Starting timeout timer (13436.5 ms) for a test run
+15:38:57 (27064) DEBUG JestTestRunner Running jest with --findRelatedTests flag. Set jest.enableFindRelatedTests to false to run all tests on every mutant.
+15:38:57 (27064) DEBUG JestTestRunner Project root is /home/find_carol/Documentos/Estudo/projetos/sd-015-b-project-react-testing-library/.stryker-tmp/sandbox9883167
+15:38:57 (26912) DEBUG Sandbox Creating a sandbox for files in /home/find_carol/Documentos/Estudo/projetos/sd-015-b-project-react-testing-library/.stryker-tmp/sandbox1422404
+15:38:57 (27057) TRACE JestLessThan25TestAdapter Invoking Jest with config {"roots":["<rootDir>/src"],"collectCoverageFrom":["**/*.{js,jsx}","!src/index.js","!src/serviceWorker.js"],"setupFiles":["/home/find_carol/Documentos/Estudo/projetos/sd-015-b-project-react-testing-library/node_modules/react-app-polyfill/jsdom.js"],"setupFilesAfterEnv":["<rootDir>/src/setupTests.js"],"testMatch":["<rootDir>/src/**/__tests__/**/*.{js,jsx,ts,tsx}","<rootDir>/src/**/*.{spec,test}.{js,jsx,ts,tsx}"],"testEnvironment":"jest-environment-jsdom-fourteen","transform":{"^.+\\.(js|jsx|ts|tsx)$":"/home/find_carol/Documentos/Estudo/projetos/sd-015-b-project-react-testing-library/node_modules/react-scripts/config/jest/babelTransform.js","^.+\\.css$":"/home/find_carol/Documentos/Estudo/projetos/sd-015-b-project-react-testing-library/node_modules/react-scripts/config/jest/cssTransform.js","^(?!.*\\.(js|jsx|ts|tsx|css|json)$)":"/home/find_carol/Documentos/Estudo/projetos/sd-015-b-project-react-testing-library/node_modules/react-scripts/config/jest/fileTransform.js"},"transformIgnorePatterns":["[/\\\\]node_modules[/\\\\].+\\.(js|jsx|ts|tsx)$","^.+\\.module\\.(css|sass|scss)$"],"modulePaths":[],"moduleNameMapper":{"^react-native$":"react-native-web","^.+\\.module\\.(css|sass|scss)$":"identity-obj-proxy"},"moduleFileExtensions":["web.js","js","web.ts","ts","web.tsx","tsx","json","web.jsx","jsx","node"],"watchPlugins":["jest-watch-typeahead/filename","jest-watch-typeahead/testname"],"rootDir":"/home/find_carol/Documentos/Estudo/projetos/sd-015-b-project-react-testing-library/.stryker-tmp/sandbox1384923","collectCoverage":false,"verbose":false,"bail":false,"notify":false,"reporters":[]}
+15:38:57 (27057) TRACE JestLessThan25TestAdapter Only running tests related to /home/find_carol/Documentos/Estudo/projetos/sd-015-b-project-react-testing-library/.stryker-tmp/sandbox1384923/src/App.js
+15:38:57 (26912) DEBUG Sandbox Creating test runner 4
+15:38:57 (26912) DEBUG ChildProcessProxy Starting /home/find_carol/Documentos/Estudo/projetos/sd-015-b-project-react-testing-library/node_modules/@stryker-mutator/core/src/test-runner/ChildProcessTestRunnerWorker.js in child process 27098
+15:38:57 (26912) DEBUG TimeoutDecorator Starting timeout timer (13436.5 ms) for a test run
+15:38:57 (26912) DEBUG Sandbox Creating test runner 5
+15:38:57 (26912) DEBUG ChildProcessProxy Starting /home/find_carol/Documentos/Estudo/projetos/sd-015-b-project-react-testing-library/node_modules/@stryker-mutator/core/src/test-runner/ChildProcessTestRunnerWorker.js in child process 27104
+15:38:57 (27064) TRACE JestLessThan25TestAdapter Invoking Jest with config {"roots":["<rootDir>/src"],"collectCoverageFrom":["**/*.{js,jsx}","!src/index.js","!src/serviceWorker.js"],"setupFiles":["/home/find_carol/Documentos/Estudo/projetos/sd-015-b-project-react-testing-library/node_modules/react-app-polyfill/jsdom.js"],"setupFilesAfterEnv":["<rootDir>/src/setupTests.js"],"testMatch":["<rootDir>/src/**/__tests__/**/*.{js,jsx,ts,tsx}","<rootDir>/src/**/*.{spec,test}.{js,jsx,ts,tsx}"],"testEnvironment":"jest-environment-jsdom-fourteen","transform":{"^.+\\.(js|jsx|ts|tsx)$":"/home/find_carol/Documentos/Estudo/projetos/sd-015-b-project-react-testing-library/node_modules/react-scripts/config/jest/babelTransform.js","^.+\\.css$":"/home/find_carol/Documentos/Estudo/projetos/sd-015-b-project-react-testing-library/node_modules/react-scripts/config/jest/cssTransform.js","^(?!.*\\.(js|jsx|ts|tsx|css|json)$)":"/home/find_carol/Documentos/Estudo/projetos/sd-015-b-project-react-testing-library/node_modules/react-scripts/config/jest/fileTransform.js"},"transformIgnorePatterns":["[/\\\\]node_modules[/\\\\].+\\.(js|jsx|ts|tsx)$","^.+\\.module\\.(css|sass|scss)$"],"modulePaths":[],"moduleNameMapper":{"^react-native$":"react-native-web","^.+\\.module\\.(css|sass|scss)$":"identity-obj-proxy"},"moduleFileExtensions":["web.js","js","web.ts","ts","web.tsx","tsx","json","web.jsx","jsx","node"],"watchPlugins":["jest-watch-typeahead/filename","jest-watch-typeahead/testname"],"rootDir":"/home/find_carol/Documentos/Estudo/projetos/sd-015-b-project-react-testing-library/.stryker-tmp/sandbox9883167","collectCoverage":false,"verbose":false,"bail":false,"notify":false,"reporters":[]}
+15:38:57 (27064) TRACE JestLessThan25TestAdapter Only running tests related to /home/find_carol/Documentos/Estudo/projetos/sd-015-b-project-react-testing-library/.stryker-tmp/sandbox9883167/src/components/About.js
+15:38:57 (26912) DEBUG Sandbox Creating a sandbox for files in /home/find_carol/Documentos/Estudo/projetos/sd-015-b-project-react-testing-library/.stryker-tmp/sandbox5521869
+15:38:57 (27098) DEBUG ChildProcessProxyWorker Changing current working directory for this process to /home/find_carol/Documentos/Estudo/projetos/sd-015-b-project-react-testing-library/.stryker-tmp/sandbox2857203
+15:38:57 (27098) DEBUG PluginLoader Loading @stryker-mutator/* from /home/find_carol/Documentos/Estudo/projetos/sd-015-b-project-react-testing-library/node_modules/@stryker-mutator
+15:38:57 (27098) DEBUG PluginLoader Loading plugin "/home/find_carol/Documentos/Estudo/projetos/sd-015-b-project-react-testing-library/node_modules/@stryker-mutator/javascript-mutator" (matched with expression @stryker-mutator/*)
+15:38:57 (27098) DEBUG PluginLoader Loading plugin "/home/find_carol/Documentos/Estudo/projetos/sd-015-b-project-react-testing-library/node_modules/@stryker-mutator/jest-runner" (matched with expression @stryker-mutator/*)
+15:38:57 (27098) DEBUG PluginLoader Loading plugins /home/find_carol/Documentos/Estudo/projetos/sd-015-b-project-react-testing-library/node_modules/@stryker-mutator/javascript-mutator
+15:38:57 (27098) DEBUG PluginLoader Loading plugins /home/find_carol/Documentos/Estudo/projetos/sd-015-b-project-react-testing-library/node_modules/@stryker-mutator/jest-runner
+15:38:57 (27098) DEBUG PluginLoader Loading plugins /home/find_carol/Documentos/Estudo/projetos/sd-015-b-project-react-testing-library/node_modules/@stryker-mutator/core/src/reporters/index.js
+15:38:57 (27098) TRACE JestTestRunner Merging file-based config {
+  "roots": [
+    "<rootDir>/src"
+  ],
+  "collectCoverageFrom": [
+    "**/*.{js,jsx}",
+    "!src/index.js",
+    "!src/serviceWorker.js"
+  ],
+  "setupFiles": [
+    "/home/find_carol/Documentos/Estudo/projetos/sd-015-b-project-react-testing-library/node_modules/react-app-polyfill/jsdom.js"
+  ],
+  "setupFilesAfterEnv": [
+    "<rootDir>/src/setupTests.js"
+  ],
+  "testMatch": [
+    "<rootDir>/src/**/__tests__/**/*.{js,jsx,ts,tsx}",
+    "<rootDir>/src/**/*.{spec,test}.{js,jsx,ts,tsx}"
+  ],
+  "testEnvironment": "jest-environment-jsdom-fourteen",
+  "transform": {
+    "^.+\\.(js|jsx|ts|tsx)$": "/home/find_carol/Documentos/Estudo/projetos/sd-015-b-project-react-testing-library/node_modules/react-scripts/config/jest/babelTransform.js",
+    "^.+\\.css$": "/home/find_carol/Documentos/Estudo/projetos/sd-015-b-project-react-testing-library/node_modules/react-scripts/config/jest/cssTransform.js",
+    "^(?!.*\\.(js|jsx|ts|tsx|css|json)$)": "/home/find_carol/Documentos/Estudo/projetos/sd-015-b-project-react-testing-library/node_modules/react-scripts/config/jest/fileTransform.js"
+  },
+  "transformIgnorePatterns": [
+    "[/\\\\]node_modules[/\\\\].+\\.(js|jsx|ts|tsx)$",
+    "^.+\\.module\\.(css|sass|scss)$"
+  ],
+  "modulePaths": [],
+  "moduleNameMapper": {
+    "^react-native$": "react-native-web",
+    "^.+\\.module\\.(css|sass|scss)$": "identity-obj-proxy"
+  },
+  "moduleFileExtensions": [
+    "web.js",
+    "js",
+    "web.ts",
+    "ts",
+    "web.tsx",
+    "tsx",
+    "json",
+    "web.jsx",
+    "jsx",
+    "node"
+  ],
+  "watchPlugins": [
+    "jest-watch-typeahead/filename",
+    "jest-watch-typeahead/testname"
+  ],
+  "rootDir": "/home/find_carol/Documentos/Estudo/projetos/sd-015-b-project-react-testing-library/.stryker-tmp/sandbox2857203"
+} 
+      with custom config {}
+      and default (internal) stryker config [object Object]
+15:38:57 (27098) DEBUG JestTestRunner Running jest with --findRelatedTests flag. Set jest.enableFindRelatedTests to false to run all tests on every mutant.
+15:38:57 (27098) DEBUG JestTestRunner Project root is /home/find_carol/Documentos/Estudo/projetos/sd-015-b-project-react-testing-library/.stryker-tmp/sandbox2857203
+15:38:57 (27104) DEBUG ChildProcessProxyWorker Changing current working directory for this process to /home/find_carol/Documentos/Estudo/projetos/sd-015-b-project-react-testing-library/.stryker-tmp/sandbox1422404
+15:38:57 (27104) DEBUG PluginLoader Loading @stryker-mutator/* from /home/find_carol/Documentos/Estudo/projetos/sd-015-b-project-react-testing-library/node_modules/@stryker-mutator
+15:38:57 (27104) DEBUG PluginLoader Loading plugin "/home/find_carol/Documentos/Estudo/projetos/sd-015-b-project-react-testing-library/node_modules/@stryker-mutator/javascript-mutator" (matched with expression @stryker-mutator/*)
+15:38:57 (27104) DEBUG PluginLoader Loading plugin "/home/find_carol/Documentos/Estudo/projetos/sd-015-b-project-react-testing-library/node_modules/@stryker-mutator/jest-runner" (matched with expression @stryker-mutator/*)
+15:38:57 (27104) DEBUG PluginLoader Loading plugins /home/find_carol/Documentos/Estudo/projetos/sd-015-b-project-react-testing-library/node_modules/@stryker-mutator/javascript-mutator
+15:38:57 (27104) DEBUG PluginLoader Loading plugins /home/find_carol/Documentos/Estudo/projetos/sd-015-b-project-react-testing-library/node_modules/@stryker-mutator/jest-runner
+15:38:57 (27104) DEBUG PluginLoader Loading plugins /home/find_carol/Documentos/Estudo/projetos/sd-015-b-project-react-testing-library/node_modules/@stryker-mutator/core/src/reporters/index.js
+15:38:57 (27104) TRACE JestTestRunner Merging file-based config {
+  "roots": [
+    "<rootDir>/src"
+  ],
+  "collectCoverageFrom": [
+    "**/*.{js,jsx}",
+    "!src/index.js",
+    "!src/serviceWorker.js"
+  ],
+  "setupFiles": [
+    "/home/find_carol/Documentos/Estudo/projetos/sd-015-b-project-react-testing-library/node_modules/react-app-polyfill/jsdom.js"
+  ],
+  "setupFilesAfterEnv": [
+    "<rootDir>/src/setupTests.js"
+  ],
+  "testMatch": [
+    "<rootDir>/src/**/__tests__/**/*.{js,jsx,ts,tsx}",
+    "<rootDir>/src/**/*.{spec,test}.{js,jsx,ts,tsx}"
+  ],
+  "testEnvironment": "jest-environment-jsdom-fourteen",
+  "transform": {
+    "^.+\\.(js|jsx|ts|tsx)$": "/home/find_carol/Documentos/Estudo/projetos/sd-015-b-project-react-testing-library/node_modules/react-scripts/config/jest/babelTransform.js",
+    "^.+\\.css$": "/home/find_carol/Documentos/Estudo/projetos/sd-015-b-project-react-testing-library/node_modules/react-scripts/config/jest/cssTransform.js",
+    "^(?!.*\\.(js|jsx|ts|tsx|css|json)$)": "/home/find_carol/Documentos/Estudo/projetos/sd-015-b-project-react-testing-library/node_modules/react-scripts/config/jest/fileTransform.js"
+  },
+  "transformIgnorePatterns": [
+    "[/\\\\]node_modules[/\\\\].+\\.(js|jsx|ts|tsx)$",
+    "^.+\\.module\\.(css|sass|scss)$"
+  ],
+  "modulePaths": [],
+  "moduleNameMapper": {
+    "^react-native$": "react-native-web",
+    "^.+\\.module\\.(css|sass|scss)$": "identity-obj-proxy"
+  },
+  "moduleFileExtensions": [
+    "web.js",
+    "js",
+    "web.ts",
+    "ts",
+    "web.tsx",
+    "tsx",
+    "json",
+    "web.jsx",
+    "jsx",
+    "node"
+  ],
+  "watchPlugins": [
+    "jest-watch-typeahead/filename",
+    "jest-watch-typeahead/testname"
+  ],
+  "rootDir": "/home/find_carol/Documentos/Estudo/projetos/sd-015-b-project-react-testing-library/.stryker-tmp/sandbox1422404"
+} 
+      with custom config {}
+      and default (internal) stryker config [object Object]
+15:38:57 (27104) DEBUG JestTestRunner Running jest with --findRelatedTests flag. Set jest.enableFindRelatedTests to false to run all tests on every mutant.
+15:38:57 (27104) DEBUG JestTestRunner Project root is /home/find_carol/Documentos/Estudo/projetos/sd-015-b-project-react-testing-library/.stryker-tmp/sandbox1422404
+15:38:58 (26912) DEBUG TimeoutDecorator Starting timeout timer (13436.5 ms) for a test run
+15:38:58 (26912) DEBUG Sandbox Creating a sandbox for files in /home/find_carol/Documentos/Estudo/projetos/sd-015-b-project-react-testing-library/.stryker-tmp/sandbox9671805
+15:38:58 (27098) TRACE JestLessThan25TestAdapter Invoking Jest with config {"roots":["<rootDir>/src"],"collectCoverageFrom":["**/*.{js,jsx}","!src/index.js","!src/serviceWorker.js"],"setupFiles":["/home/find_carol/Documentos/Estudo/projetos/sd-015-b-project-react-testing-library/node_modules/react-app-polyfill/jsdom.js"],"setupFilesAfterEnv":["<rootDir>/src/setupTests.js"],"testMatch":["<rootDir>/src/**/__tests__/**/*.{js,jsx,ts,tsx}","<rootDir>/src/**/*.{spec,test}.{js,jsx,ts,tsx}"],"testEnvironment":"jest-environment-jsdom-fourteen","transform":{"^.+\\.(js|jsx|ts|tsx)$":"/home/find_carol/Documentos/Estudo/projetos/sd-015-b-project-react-testing-library/node_modules/react-scripts/config/jest/babelTransform.js","^.+\\.css$":"/home/find_carol/Documentos/Estudo/projetos/sd-015-b-project-react-testing-library/node_modules/react-scripts/config/jest/cssTransform.js","^(?!.*\\.(js|jsx|ts|tsx|css|json)$)":"/home/find_carol/Documentos/Estudo/projetos/sd-015-b-project-react-testing-library/node_modules/react-scripts/config/jest/fileTransform.js"},"transformIgnorePatterns":["[/\\\\]node_modules[/\\\\].+\\.(js|jsx|ts|tsx)$","^.+\\.module\\.(css|sass|scss)$"],"modulePaths":[],"moduleNameMapper":{"^react-native$":"react-native-web","^.+\\.module\\.(css|sass|scss)$":"identity-obj-proxy"},"moduleFileExtensions":["web.js","js","web.ts","ts","web.tsx","tsx","json","web.jsx","jsx","node"],"watchPlugins":["jest-watch-typeahead/filename","jest-watch-typeahead/testname"],"rootDir":"/home/find_carol/Documentos/Estudo/projetos/sd-015-b-project-react-testing-library/.stryker-tmp/sandbox2857203","collectCoverage":false,"verbose":false,"bail":false,"notify":false,"reporters":[]}
+15:38:58 (27098) TRACE JestLessThan25TestAdapter Only running tests related to /home/find_carol/Documentos/Estudo/projetos/sd-015-b-project-react-testing-library/.stryker-tmp/sandbox2857203/src/components/About.js
+15:38:58 (26912) DEBUG Sandbox Creating test runner 6
+15:38:58 (26912) DEBUG ChildProcessProxy Starting /home/find_carol/Documentos/Estudo/projetos/sd-015-b-project-react-testing-library/node_modules/@stryker-mutator/core/src/test-runner/ChildProcessTestRunnerWorker.js in child process 27182
+15:38:58 (26912) DEBUG TimeoutDecorator Starting timeout timer (13436.5 ms) for a test run
+15:38:58 (27104) TRACE JestLessThan25TestAdapter Invoking Jest with config {"roots":["<rootDir>/src"],"collectCoverageFrom":["**/*.{js,jsx}","!src/index.js","!src/serviceWorker.js"],"setupFiles":["/home/find_carol/Documentos/Estudo/projetos/sd-015-b-project-react-testing-library/node_modules/react-app-polyfill/jsdom.js"],"setupFilesAfterEnv":["<rootDir>/src/setupTests.js"],"testMatch":["<rootDir>/src/**/__tests__/**/*.{js,jsx,ts,tsx}","<rootDir>/src/**/*.{spec,test}.{js,jsx,ts,tsx}"],"testEnvironment":"jest-environment-jsdom-fourteen","transform":{"^.+\\.(js|jsx|ts|tsx)$":"/home/find_carol/Documentos/Estudo/projetos/sd-015-b-project-react-testing-library/node_modules/react-scripts/config/jest/babelTransform.js","^.+\\.css$":"/home/find_carol/Documentos/Estudo/projetos/sd-015-b-project-react-testing-library/node_modules/react-scripts/config/jest/cssTransform.js","^(?!.*\\.(js|jsx|ts|tsx|css|json)$)":"/home/find_carol/Documentos/Estudo/projetos/sd-015-b-project-react-testing-library/node_modules/react-scripts/config/jest/fileTransform.js"},"transformIgnorePatterns":["[/\\\\]node_modules[/\\\\].+\\.(js|jsx|ts|tsx)$","^.+\\.module\\.(css|sass|scss)$"],"modulePaths":[],"moduleNameMapper":{"^react-native$":"react-native-web","^.+\\.module\\.(css|sass|scss)$":"identity-obj-proxy"},"moduleFileExtensions":["web.js","js","web.ts","ts","web.tsx","tsx","json","web.jsx","jsx","node"],"watchPlugins":["jest-watch-typeahead/filename","jest-watch-typeahead/testname"],"rootDir":"/home/find_carol/Documentos/Estudo/projetos/sd-015-b-project-react-testing-library/.stryker-tmp/sandbox1422404","collectCoverage":false,"verbose":false,"bail":false,"notify":false,"reporters":[]}
+15:38:58 (27104) TRACE JestLessThan25TestAdapter Only running tests related to /home/find_carol/Documentos/Estudo/projetos/sd-015-b-project-react-testing-library/.stryker-tmp/sandbox1422404/src/components/About.js
+15:38:58 (26912) DEBUG Sandbox Creating test runner 7
+15:38:58 (26912) DEBUG ChildProcessProxy Starting /home/find_carol/Documentos/Estudo/projetos/sd-015-b-project-react-testing-library/node_modules/@stryker-mutator/core/src/test-runner/ChildProcessTestRunnerWorker.js in child process 27188
+15:38:59 (26912) DEBUG Sandbox Creating a sandbox for files in /home/find_carol/Documentos/Estudo/projetos/sd-015-b-project-react-testing-library/.stryker-tmp/sandbox7554108
+15:38:58 (27182) DEBUG ChildProcessProxyWorker Changing current working directory for this process to /home/find_carol/Documentos/Estudo/projetos/sd-015-b-project-react-testing-library/.stryker-tmp/sandbox5521869
+15:38:58 (27182) DEBUG PluginLoader Loading @stryker-mutator/* from /home/find_carol/Documentos/Estudo/projetos/sd-015-b-project-react-testing-library/node_modules/@stryker-mutator
+15:38:58 (27182) DEBUG PluginLoader Loading plugin "/home/find_carol/Documentos/Estudo/projetos/sd-015-b-project-react-testing-library/node_modules/@stryker-mutator/javascript-mutator" (matched with expression @stryker-mutator/*)
+15:38:58 (27182) DEBUG PluginLoader Loading plugin "/home/find_carol/Documentos/Estudo/projetos/sd-015-b-project-react-testing-library/node_modules/@stryker-mutator/jest-runner" (matched with expression @stryker-mutator/*)
+15:38:58 (27182) DEBUG PluginLoader Loading plugins /home/find_carol/Documentos/Estudo/projetos/sd-015-b-project-react-testing-library/node_modules/@stryker-mutator/javascript-mutator
+15:38:58 (27182) DEBUG PluginLoader Loading plugins /home/find_carol/Documentos/Estudo/projetos/sd-015-b-project-react-testing-library/node_modules/@stryker-mutator/jest-runner
+15:38:58 (27182) DEBUG PluginLoader Loading plugins /home/find_carol/Documentos/Estudo/projetos/sd-015-b-project-react-testing-library/node_modules/@stryker-mutator/core/src/reporters/index.js
+15:38:59 (27182) TRACE JestTestRunner Merging file-based config {
+  "roots": [
+    "<rootDir>/src"
+  ],
+  "collectCoverageFrom": [
+    "**/*.{js,jsx}",
+    "!src/index.js",
+    "!src/serviceWorker.js"
+  ],
+  "setupFiles": [
+    "/home/find_carol/Documentos/Estudo/projetos/sd-015-b-project-react-testing-library/node_modules/react-app-polyfill/jsdom.js"
+  ],
+  "setupFilesAfterEnv": [
+    "<rootDir>/src/setupTests.js"
+  ],
+  "testMatch": [
+    "<rootDir>/src/**/__tests__/**/*.{js,jsx,ts,tsx}",
+    "<rootDir>/src/**/*.{spec,test}.{js,jsx,ts,tsx}"
+  ],
+  "testEnvironment": "jest-environment-jsdom-fourteen",
+  "transform": {
+    "^.+\\.(js|jsx|ts|tsx)$": "/home/find_carol/Documentos/Estudo/projetos/sd-015-b-project-react-testing-library/node_modules/react-scripts/config/jest/babelTransform.js",
+    "^.+\\.css$": "/home/find_carol/Documentos/Estudo/projetos/sd-015-b-project-react-testing-library/node_modules/react-scripts/config/jest/cssTransform.js",
+    "^(?!.*\\.(js|jsx|ts|tsx|css|json)$)": "/home/find_carol/Documentos/Estudo/projetos/sd-015-b-project-react-testing-library/node_modules/react-scripts/config/jest/fileTransform.js"
+  },
+  "transformIgnorePatterns": [
+    "[/\\\\]node_modules[/\\\\].+\\.(js|jsx|ts|tsx)$",
+    "^.+\\.module\\.(css|sass|scss)$"
+  ],
+  "modulePaths": [],
+  "moduleNameMapper": {
+    "^react-native$": "react-native-web",
+    "^.+\\.module\\.(css|sass|scss)$": "identity-obj-proxy"
+  },
+  "moduleFileExtensions": [
+    "web.js",
+    "js",
+    "web.ts",
+    "ts",
+    "web.tsx",
+    "tsx",
+    "json",
+    "web.jsx",
+    "jsx",
+    "node"
+  ],
+  "watchPlugins": [
+    "jest-watch-typeahead/filename",
+    "jest-watch-typeahead/testname"
+  ],
+  "rootDir": "/home/find_carol/Documentos/Estudo/projetos/sd-015-b-project-react-testing-library/.stryker-tmp/sandbox5521869"
+} 
+      with custom config {}
+      and default (internal) stryker config [object Object]
+15:38:59 (27182) DEBUG JestTestRunner Running jest with --findRelatedTests flag. Set jest.enableFindRelatedTests to false to run all tests on every mutant.
+15:38:59 (27182) DEBUG JestTestRunner Project root is /home/find_carol/Documentos/Estudo/projetos/sd-015-b-project-react-testing-library/.stryker-tmp/sandbox5521869
+15:38:59 (26912) DEBUG Sandbox Creating a sandbox for files in /home/find_carol/Documentos/Estudo/projetos/sd-015-b-project-react-testing-library/.stryker-tmp/sandbox7851944
+15:38:58 (27188) DEBUG ChildProcessProxyWorker Changing current working directory for this process to /home/find_carol/Documentos/Estudo/projetos/sd-015-b-project-react-testing-library/.stryker-tmp/sandbox9671805
+15:38:58 (27188) DEBUG PluginLoader Loading @stryker-mutator/* from /home/find_carol/Documentos/Estudo/projetos/sd-015-b-project-react-testing-library/node_modules/@stryker-mutator
+15:38:58 (27188) DEBUG PluginLoader Loading plugin "/home/find_carol/Documentos/Estudo/projetos/sd-015-b-project-react-testing-library/node_modules/@stryker-mutator/javascript-mutator" (matched with expression @stryker-mutator/*)
+15:38:58 (27188) DEBUG PluginLoader Loading plugin "/home/find_carol/Documentos/Estudo/projetos/sd-015-b-project-react-testing-library/node_modules/@stryker-mutator/jest-runner" (matched with expression @stryker-mutator/*)
+15:38:58 (27188) DEBUG PluginLoader Loading plugins /home/find_carol/Documentos/Estudo/projetos/sd-015-b-project-react-testing-library/node_modules/@stryker-mutator/javascript-mutator
+15:38:58 (27188) DEBUG PluginLoader Loading plugins /home/find_carol/Documentos/Estudo/projetos/sd-015-b-project-react-testing-library/node_modules/@stryker-mutator/jest-runner
+15:38:58 (27188) DEBUG PluginLoader Loading plugins /home/find_carol/Documentos/Estudo/projetos/sd-015-b-project-react-testing-library/node_modules/@stryker-mutator/core/src/reporters/index.js
+15:38:59 (27188) TRACE JestTestRunner Merging file-based config {
+  "roots": [
+    "<rootDir>/src"
+  ],
+  "collectCoverageFrom": [
+    "**/*.{js,jsx}",
+    "!src/index.js",
+    "!src/serviceWorker.js"
+  ],
+  "setupFiles": [
+    "/home/find_carol/Documentos/Estudo/projetos/sd-015-b-project-react-testing-library/node_modules/react-app-polyfill/jsdom.js"
+  ],
+  "setupFilesAfterEnv": [
+    "<rootDir>/src/setupTests.js"
+  ],
+  "testMatch": [
+    "<rootDir>/src/**/__tests__/**/*.{js,jsx,ts,tsx}",
+    "<rootDir>/src/**/*.{spec,test}.{js,jsx,ts,tsx}"
+  ],
+  "testEnvironment": "jest-environment-jsdom-fourteen",
+  "transform": {
+    "^.+\\.(js|jsx|ts|tsx)$": "/home/find_carol/Documentos/Estudo/projetos/sd-015-b-project-react-testing-library/node_modules/react-scripts/config/jest/babelTransform.js",
+    "^.+\\.css$": "/home/find_carol/Documentos/Estudo/projetos/sd-015-b-project-react-testing-library/node_modules/react-scripts/config/jest/cssTransform.js",
+    "^(?!.*\\.(js|jsx|ts|tsx|css|json)$)": "/home/find_carol/Documentos/Estudo/projetos/sd-015-b-project-react-testing-library/node_modules/react-scripts/config/jest/fileTransform.js"
+  },
+  "transformIgnorePatterns": [
+    "[/\\\\]node_modules[/\\\\].+\\.(js|jsx|ts|tsx)$",
+    "^.+\\.module\\.(css|sass|scss)$"
+  ],
+  "modulePaths": [],
+  "moduleNameMapper": {
+    "^react-native$": "react-native-web",
+    "^.+\\.module\\.(css|sass|scss)$": "identity-obj-proxy"
+  },
+  "moduleFileExtensions": [
+    "web.js",
+    "js",
+    "web.ts",
+    "ts",
+    "web.tsx",
+    "tsx",
+    "json",
+    "web.jsx",
+    "jsx",
+    "node"
+  ],
+  "watchPlugins": [
+    "jest-watch-typeahead/filename",
+    "jest-watch-typeahead/testname"
+  ],
+  "rootDir": "/home/find_carol/Documentos/Estudo/projetos/sd-015-b-project-react-testing-library/.stryker-tmp/sandbox9671805"
+} 
+      with custom config {}
+      and default (internal) stryker config [object Object]
+15:38:59 (27188) DEBUG JestTestRunner Running jest with --findRelatedTests flag. Set jest.enableFindRelatedTests to false to run all tests on every mutant.
+15:38:59 (27188) DEBUG JestTestRunner Project root is /home/find_carol/Documentos/Estudo/projetos/sd-015-b-project-react-testing-library/.stryker-tmp/sandbox9671805
+15:38:59 (26912) DEBUG TimeoutDecorator Starting timeout timer (13436.5 ms) for a test run
+15:38:59 (26912) DEBUG TimeoutDecorator Starting timeout timer (13436.5 ms) for a test run
+15:38:59 (27182) TRACE JestLessThan25TestAdapter Invoking Jest with config {"roots":["<rootDir>/src"],"collectCoverageFrom":["**/*.{js,jsx}","!src/index.js","!src/serviceWorker.js"],"setupFiles":["/home/find_carol/Documentos/Estudo/projetos/sd-015-b-project-react-testing-library/node_modules/react-app-polyfill/jsdom.js"],"setupFilesAfterEnv":["<rootDir>/src/setupTests.js"],"testMatch":["<rootDir>/src/**/__tests__/**/*.{js,jsx,ts,tsx}","<rootDir>/src/**/*.{spec,test}.{js,jsx,ts,tsx}"],"testEnvironment":"jest-environment-jsdom-fourteen","transform":{"^.+\\.(js|jsx|ts|tsx)$":"/home/find_carol/Documentos/Estudo/projetos/sd-015-b-project-react-testing-library/node_modules/react-scripts/config/jest/babelTransform.js","^.+\\.css$":"/home/find_carol/Documentos/Estudo/projetos/sd-015-b-project-react-testing-library/node_modules/react-scripts/config/jest/cssTransform.js","^(?!.*\\.(js|jsx|ts|tsx|css|json)$)":"/home/find_carol/Documentos/Estudo/projetos/sd-015-b-project-react-testing-library/node_modules/react-scripts/config/jest/fileTransform.js"},"transformIgnorePatterns":["[/\\\\]node_modules[/\\\\].+\\.(js|jsx|ts|tsx)$","^.+\\.module\\.(css|sass|scss)$"],"modulePaths":[],"moduleNameMapper":{"^react-native$":"react-native-web","^.+\\.module\\.(css|sass|scss)$":"identity-obj-proxy"},"moduleFileExtensions":["web.js","js","web.ts","ts","web.tsx","tsx","json","web.jsx","jsx","node"],"watchPlugins":["jest-watch-typeahead/filename","jest-watch-typeahead/testname"],"rootDir":"/home/find_carol/Documentos/Estudo/projetos/sd-015-b-project-react-testing-library/.stryker-tmp/sandbox5521869","collectCoverage":false,"verbose":false,"bail":false,"notify":false,"reporters":[]}
+15:38:59 (27182) TRACE JestLessThan25TestAdapter Only running tests related to /home/find_carol/Documentos/Estudo/projetos/sd-015-b-project-react-testing-library/.stryker-tmp/sandbox5521869/src/components/FavoritePokemons.js
+15:38:59 (26912) DEBUG Sandbox Creating test runner 8
+15:38:59 (26912) DEBUG ChildProcessProxy Starting /home/find_carol/Documentos/Estudo/projetos/sd-015-b-project-react-testing-library/node_modules/@stryker-mutator/core/src/test-runner/ChildProcessTestRunnerWorker.js in child process 27214
+15:38:59 (27188) TRACE JestLessThan25TestAdapter Invoking Jest with config {"roots":["<rootDir>/src"],"collectCoverageFrom":["**/*.{js,jsx}","!src/index.js","!src/serviceWorker.js"],"setupFiles":["/home/find_carol/Documentos/Estudo/projetos/sd-015-b-project-react-testing-library/node_modules/react-app-polyfill/jsdom.js"],"setupFilesAfterEnv":["<rootDir>/src/setupTests.js"],"testMatch":["<rootDir>/src/**/__tests__/**/*.{js,jsx,ts,tsx}","<rootDir>/src/**/*.{spec,test}.{js,jsx,ts,tsx}"],"testEnvironment":"jest-environment-jsdom-fourteen","transform":{"^.+\\.(js|jsx|ts|tsx)$":"/home/find_carol/Documentos/Estudo/projetos/sd-015-b-project-react-testing-library/node_modules/react-scripts/config/jest/babelTransform.js","^.+\\.css$":"/home/find_carol/Documentos/Estudo/projetos/sd-015-b-project-react-testing-library/node_modules/react-scripts/config/jest/cssTransform.js","^(?!.*\\.(js|jsx|ts|tsx|css|json)$)":"/home/find_carol/Documentos/Estudo/projetos/sd-015-b-project-react-testing-library/node_modules/react-scripts/config/jest/fileTransform.js"},"transformIgnorePatterns":["[/\\\\]node_modules[/\\\\].+\\.(js|jsx|ts|tsx)$","^.+\\.module\\.(css|sass|scss)$"],"modulePaths":[],"moduleNameMapper":{"^react-native$":"react-native-web","^.+\\.module\\.(css|sass|scss)$":"identity-obj-proxy"},"moduleFileExtensions":["web.js","js","web.ts","ts","web.tsx","tsx","json","web.jsx","jsx","node"],"watchPlugins":["jest-watch-typeahead/filename","jest-watch-typeahead/testname"],"rootDir":"/home/find_carol/Documentos/Estudo/projetos/sd-015-b-project-react-testing-library/.stryker-tmp/sandbox9671805","collectCoverage":false,"verbose":false,"bail":false,"notify":false,"reporters":[]}
+15:38:59 (27188) TRACE JestLessThan25TestAdapter Only running tests related to /home/find_carol/Documentos/Estudo/projetos/sd-015-b-project-react-testing-library/.stryker-tmp/sandbox9671805/src/components/FavoritePokemons.js
+15:38:59 (26912) DEBUG Sandbox Creating test runner 9
+15:38:59 (26912) DEBUG ChildProcessProxy Starting /home/find_carol/Documentos/Estudo/projetos/sd-015-b-project-react-testing-library/node_modules/@stryker-mutator/core/src/test-runner/ChildProcessTestRunnerWorker.js in child process 27220
+15:39:00 (26912) DEBUG Sandbox Creating a sandbox for files in /home/find_carol/Documentos/Estudo/projetos/sd-015-b-project-react-testing-library/.stryker-tmp/sandbox9606331
+15:38:59 (27220) DEBUG ChildProcessProxyWorker Changing current working directory for this process to /home/find_carol/Documentos/Estudo/projetos/sd-015-b-project-react-testing-library/.stryker-tmp/sandbox7851944
+15:38:59 (27220) DEBUG PluginLoader Loading @stryker-mutator/* from /home/find_carol/Documentos/Estudo/projetos/sd-015-b-project-react-testing-library/node_modules/@stryker-mutator
+15:38:59 (27220) DEBUG PluginLoader Loading plugin "/home/find_carol/Documentos/Estudo/projetos/sd-015-b-project-react-testing-library/node_modules/@stryker-mutator/javascript-mutator" (matched with expression @stryker-mutator/*)
+15:38:59 (27220) DEBUG PluginLoader Loading plugin "/home/find_carol/Documentos/Estudo/projetos/sd-015-b-project-react-testing-library/node_modules/@stryker-mutator/jest-runner" (matched with expression @stryker-mutator/*)
+15:38:59 (27220) DEBUG PluginLoader Loading plugins /home/find_carol/Documentos/Estudo/projetos/sd-015-b-project-react-testing-library/node_modules/@stryker-mutator/javascript-mutator
+15:38:59 (27220) DEBUG PluginLoader Loading plugins /home/find_carol/Documentos/Estudo/projetos/sd-015-b-project-react-testing-library/node_modules/@stryker-mutator/jest-runner
+15:38:59 (27220) DEBUG PluginLoader Loading plugins /home/find_carol/Documentos/Estudo/projetos/sd-015-b-project-react-testing-library/node_modules/@stryker-mutator/core/src/reporters/index.js
+15:39:00 (27220) TRACE JestTestRunner Merging file-based config {
+  "roots": [
+    "<rootDir>/src"
+  ],
+  "collectCoverageFrom": [
+    "**/*.{js,jsx}",
+    "!src/index.js",
+    "!src/serviceWorker.js"
+  ],
+  "setupFiles": [
+    "/home/find_carol/Documentos/Estudo/projetos/sd-015-b-project-react-testing-library/node_modules/react-app-polyfill/jsdom.js"
+  ],
+  "setupFilesAfterEnv": [
+    "<rootDir>/src/setupTests.js"
+  ],
+  "testMatch": [
+    "<rootDir>/src/**/__tests__/**/*.{js,jsx,ts,tsx}",
+    "<rootDir>/src/**/*.{spec,test}.{js,jsx,ts,tsx}"
+  ],
+  "testEnvironment": "jest-environment-jsdom-fourteen",
+  "transform": {
+    "^.+\\.(js|jsx|ts|tsx)$": "/home/find_carol/Documentos/Estudo/projetos/sd-015-b-project-react-testing-library/node_modules/react-scripts/config/jest/babelTransform.js",
+    "^.+\\.css$": "/home/find_carol/Documentos/Estudo/projetos/sd-015-b-project-react-testing-library/node_modules/react-scripts/config/jest/cssTransform.js",
+    "^(?!.*\\.(js|jsx|ts|tsx|css|json)$)": "/home/find_carol/Documentos/Estudo/projetos/sd-015-b-project-react-testing-library/node_modules/react-scripts/config/jest/fileTransform.js"
+  },
+  "transformIgnorePatterns": [
+    "[/\\\\]node_modules[/\\\\].+\\.(js|jsx|ts|tsx)$",
+    "^.+\\.module\\.(css|sass|scss)$"
+  ],
+  "modulePaths": [],
+  "moduleNameMapper": {
+    "^react-native$": "react-native-web",
+    "^.+\\.module\\.(css|sass|scss)$": "identity-obj-proxy"
+  },
+  "moduleFileExtensions": [
+    "web.js",
+    "js",
+    "web.ts",
+    "ts",
+    "web.tsx",
+    "tsx",
+    "json",
+    "web.jsx",
+    "jsx",
+    "node"
+  ],
+  "watchPlugins": [
+    "jest-watch-typeahead/filename",
+    "jest-watch-typeahead/testname"
+  ],
+  "rootDir": "/home/find_carol/Documentos/Estudo/projetos/sd-015-b-project-react-testing-library/.stryker-tmp/sandbox7851944"
+} 
+      with custom config {}
+      and default (internal) stryker config [object Object]
+15:39:00 (27220) DEBUG JestTestRunner Running jest with --findRelatedTests flag. Set jest.enableFindRelatedTests to false to run all tests on every mutant.
+15:39:00 (27220) DEBUG JestTestRunner Project root is /home/find_carol/Documentos/Estudo/projetos/sd-015-b-project-react-testing-library/.stryker-tmp/sandbox7851944
+15:38:59 (27214) DEBUG ChildProcessProxyWorker Changing current working directory for this process to /home/find_carol/Documentos/Estudo/projetos/sd-015-b-project-react-testing-library/.stryker-tmp/sandbox7554108
+15:38:59 (27214) DEBUG PluginLoader Loading @stryker-mutator/* from /home/find_carol/Documentos/Estudo/projetos/sd-015-b-project-react-testing-library/node_modules/@stryker-mutator
+15:38:59 (27214) DEBUG PluginLoader Loading plugin "/home/find_carol/Documentos/Estudo/projetos/sd-015-b-project-react-testing-library/node_modules/@stryker-mutator/javascript-mutator" (matched with expression @stryker-mutator/*)
+15:38:59 (27214) DEBUG PluginLoader Loading plugin "/home/find_carol/Documentos/Estudo/projetos/sd-015-b-project-react-testing-library/node_modules/@stryker-mutator/jest-runner" (matched with expression @stryker-mutator/*)
+15:38:59 (27214) DEBUG PluginLoader Loading plugins /home/find_carol/Documentos/Estudo/projetos/sd-015-b-project-react-testing-library/node_modules/@stryker-mutator/javascript-mutator
+15:38:59 (27214) DEBUG PluginLoader Loading plugins /home/find_carol/Documentos/Estudo/projetos/sd-015-b-project-react-testing-library/node_modules/@stryker-mutator/jest-runner
+15:38:59 (27214) DEBUG PluginLoader Loading plugins /home/find_carol/Documentos/Estudo/projetos/sd-015-b-project-react-testing-library/node_modules/@stryker-mutator/core/src/reporters/index.js
+15:39:00 (27214) TRACE JestTestRunner Merging file-based config {
+  "roots": [
+    "<rootDir>/src"
+  ],
+  "collectCoverageFrom": [
+    "**/*.{js,jsx}",
+    "!src/index.js",
+    "!src/serviceWorker.js"
+  ],
+  "setupFiles": [
+    "/home/find_carol/Documentos/Estudo/projetos/sd-015-b-project-react-testing-library/node_modules/react-app-polyfill/jsdom.js"
+  ],
+  "setupFilesAfterEnv": [
+    "<rootDir>/src/setupTests.js"
+  ],
+  "testMatch": [
+    "<rootDir>/src/**/__tests__/**/*.{js,jsx,ts,tsx}",
+    "<rootDir>/src/**/*.{spec,test}.{js,jsx,ts,tsx}"
+  ],
+  "testEnvironment": "jest-environment-jsdom-fourteen",
+  "transform": {
+    "^.+\\.(js|jsx|ts|tsx)$": "/home/find_carol/Documentos/Estudo/projetos/sd-015-b-project-react-testing-library/node_modules/react-scripts/config/jest/babelTransform.js",
+    "^.+\\.css$": "/home/find_carol/Documentos/Estudo/projetos/sd-015-b-project-react-testing-library/node_modules/react-scripts/config/jest/cssTransform.js",
+    "^(?!.*\\.(js|jsx|ts|tsx|css|json)$)": "/home/find_carol/Documentos/Estudo/projetos/sd-015-b-project-react-testing-library/node_modules/react-scripts/config/jest/fileTransform.js"
+  },
+  "transformIgnorePatterns": [
+    "[/\\\\]node_modules[/\\\\].+\\.(js|jsx|ts|tsx)$",
+    "^.+\\.module\\.(css|sass|scss)$"
+  ],
+  "modulePaths": [],
+  "moduleNameMapper": {
+    "^react-native$": "react-native-web",
+    "^.+\\.module\\.(css|sass|scss)$": "identity-obj-proxy"
+  },
+  "moduleFileExtensions": [
+    "web.js",
+    "js",
+    "web.ts",
+    "ts",
+    "web.tsx",
+    "tsx",
+    "json",
+    "web.jsx",
+    "jsx",
+    "node"
+  ],
+  "watchPlugins": [
+    "jest-watch-typeahead/filename",
+    "jest-watch-typeahead/testname"
+  ],
+  "rootDir": "/home/find_carol/Documentos/Estudo/projetos/sd-015-b-project-react-testing-library/.stryker-tmp/sandbox7554108"
+} 
+      with custom config {}
+      and default (internal) stryker config [object Object]
+15:39:00 (27214) DEBUG JestTestRunner Running jest with --findRelatedTests flag. Set jest.enableFindRelatedTests to false to run all tests on every mutant.
+15:39:00 (27214) DEBUG JestTestRunner Project root is /home/find_carol/Documentos/Estudo/projetos/sd-015-b-project-react-testing-library/.stryker-tmp/sandbox7554108
+15:39:00 (26912) DEBUG TimeoutDecorator Starting timeout timer (13436.5 ms) for a test run
+15:39:00 (26912) DEBUG Sandbox Creating a sandbox for files in /home/find_carol/Documentos/Estudo/projetos/sd-015-b-project-react-testing-library/.stryker-tmp/sandbox4549570
+15:39:00 (27220) TRACE JestLessThan25TestAdapter Invoking Jest with config {"roots":["<rootDir>/src"],"collectCoverageFrom":["**/*.{js,jsx}","!src/index.js","!src/serviceWorker.js"],"setupFiles":["/home/find_carol/Documentos/Estudo/projetos/sd-015-b-project-react-testing-library/node_modules/react-app-polyfill/jsdom.js"],"setupFilesAfterEnv":["<rootDir>/src/setupTests.js"],"testMatch":["<rootDir>/src/**/__tests__/**/*.{js,jsx,ts,tsx}","<rootDir>/src/**/*.{spec,test}.{js,jsx,ts,tsx}"],"testEnvironment":"jest-environment-jsdom-fourteen","transform":{"^.+\\.(js|jsx|ts|tsx)$":"/home/find_carol/Documentos/Estudo/projetos/sd-015-b-project-react-testing-library/node_modules/react-scripts/config/jest/babelTransform.js","^.+\\.css$":"/home/find_carol/Documentos/Estudo/projetos/sd-015-b-project-react-testing-library/node_modules/react-scripts/config/jest/cssTransform.js","^(?!.*\\.(js|jsx|ts|tsx|css|json)$)":"/home/find_carol/Documentos/Estudo/projetos/sd-015-b-project-react-testing-library/node_modules/react-scripts/config/jest/fileTransform.js"},"transformIgnorePatterns":["[/\\\\]node_modules[/\\\\].+\\.(js|jsx|ts|tsx)$","^.+\\.module\\.(css|sass|scss)$"],"modulePaths":[],"moduleNameMapper":{"^react-native$":"react-native-web","^.+\\.module\\.(css|sass|scss)$":"identity-obj-proxy"},"moduleFileExtensions":["web.js","js","web.ts","ts","web.tsx","tsx","json","web.jsx","jsx","node"],"watchPlugins":["jest-watch-typeahead/filename","jest-watch-typeahead/testname"],"rootDir":"/home/find_carol/Documentos/Estudo/projetos/sd-015-b-project-react-testing-library/.stryker-tmp/sandbox7851944","collectCoverage":false,"verbose":false,"bail":false,"notify":false,"reporters":[]}
+15:39:00 (27220) TRACE JestLessThan25TestAdapter Only running tests related to /home/find_carol/Documentos/Estudo/projetos/sd-015-b-project-react-testing-library/.stryker-tmp/sandbox7851944/src/components/NotFound.js
+15:39:00 (26912) DEBUG Sandbox Creating test runner 10
+15:39:00 (26912) DEBUG ChildProcessProxy Starting /home/find_carol/Documentos/Estudo/projetos/sd-015-b-project-react-testing-library/node_modules/@stryker-mutator/core/src/test-runner/ChildProcessTestRunnerWorker.js in child process 27240
+15:39:00 (26912) DEBUG TimeoutDecorator Starting timeout timer (13436.5 ms) for a test run
+15:39:00 (26912) DEBUG Sandbox Creating test runner 11
+15:39:00 (26912) DEBUG ChildProcessProxy Starting /home/find_carol/Documentos/Estudo/projetos/sd-015-b-project-react-testing-library/node_modules/@stryker-mutator/core/src/test-runner/ChildProcessTestRunnerWorker.js in child process 27241
+15:39:00 (27214) TRACE JestLessThan25TestAdapter Invoking Jest with config {"roots":["<rootDir>/src"],"collectCoverageFrom":["**/*.{js,jsx}","!src/index.js","!src/serviceWorker.js"],"setupFiles":["/home/find_carol/Documentos/Estudo/projetos/sd-015-b-project-react-testing-library/node_modules/react-app-polyfill/jsdom.js"],"setupFilesAfterEnv":["<rootDir>/src/setupTests.js"],"testMatch":["<rootDir>/src/**/__tests__/**/*.{js,jsx,ts,tsx}","<rootDir>/src/**/*.{spec,test}.{js,jsx,ts,tsx}"],"testEnvironment":"jest-environment-jsdom-fourteen","transform":{"^.+\\.(js|jsx|ts|tsx)$":"/home/find_carol/Documentos/Estudo/projetos/sd-015-b-project-react-testing-library/node_modules/react-scripts/config/jest/babelTransform.js","^.+\\.css$":"/home/find_carol/Documentos/Estudo/projetos/sd-015-b-project-react-testing-library/node_modules/react-scripts/config/jest/cssTransform.js","^(?!.*\\.(js|jsx|ts|tsx|css|json)$)":"/home/find_carol/Documentos/Estudo/projetos/sd-015-b-project-react-testing-library/node_modules/react-scripts/config/jest/fileTransform.js"},"transformIgnorePatterns":["[/\\\\]node_modules[/\\\\].+\\.(js|jsx|ts|tsx)$","^.+\\.module\\.(css|sass|scss)$"],"modulePaths":[],"moduleNameMapper":{"^react-native$":"react-native-web","^.+\\.module\\.(css|sass|scss)$":"identity-obj-proxy"},"moduleFileExtensions":["web.js","js","web.ts","ts","web.tsx","tsx","json","web.jsx","jsx","node"],"watchPlugins":["jest-watch-typeahead/filename","jest-watch-typeahead/testname"],"rootDir":"/home/find_carol/Documentos/Estudo/projetos/sd-015-b-project-react-testing-library/.stryker-tmp/sandbox7554108","collectCoverage":false,"verbose":false,"bail":false,"notify":false,"reporters":[]}
+15:39:00 (27214) TRACE JestLessThan25TestAdapter Only running tests related to /home/find_carol/Documentos/Estudo/projetos/sd-015-b-project-react-testing-library/.stryker-tmp/sandbox7554108/src/components/NotFound.js
+15:39:01 (26912) DEBUG TimeoutDecorator Starting timeout timer (13436.5 ms) for a test run
+15:39:00 (27240) DEBUG ChildProcessProxyWorker Changing current working directory for this process to /home/find_carol/Documentos/Estudo/projetos/sd-015-b-project-react-testing-library/.stryker-tmp/sandbox9606331
+15:39:00 (27240) DEBUG PluginLoader Loading @stryker-mutator/* from /home/find_carol/Documentos/Estudo/projetos/sd-015-b-project-react-testing-library/node_modules/@stryker-mutator
+15:39:00 (27240) DEBUG PluginLoader Loading plugin "/home/find_carol/Documentos/Estudo/projetos/sd-015-b-project-react-testing-library/node_modules/@stryker-mutator/javascript-mutator" (matched with expression @stryker-mutator/*)
+15:39:00 (27240) DEBUG PluginLoader Loading plugin "/home/find_carol/Documentos/Estudo/projetos/sd-015-b-project-react-testing-library/node_modules/@stryker-mutator/jest-runner" (matched with expression @stryker-mutator/*)
+15:39:00 (27240) DEBUG PluginLoader Loading plugins /home/find_carol/Documentos/Estudo/projetos/sd-015-b-project-react-testing-library/node_modules/@stryker-mutator/javascript-mutator
+15:39:01 (27240) DEBUG PluginLoader Loading plugins /home/find_carol/Documentos/Estudo/projetos/sd-015-b-project-react-testing-library/node_modules/@stryker-mutator/jest-runner
+15:39:01 (27240) DEBUG PluginLoader Loading plugins /home/find_carol/Documentos/Estudo/projetos/sd-015-b-project-react-testing-library/node_modules/@stryker-mutator/core/src/reporters/index.js
+15:39:01 (27240) TRACE JestTestRunner Merging file-based config {
+  "roots": [
+    "<rootDir>/src"
+  ],
+  "collectCoverageFrom": [
+    "**/*.{js,jsx}",
+    "!src/index.js",
+    "!src/serviceWorker.js"
+  ],
+  "setupFiles": [
+    "/home/find_carol/Documentos/Estudo/projetos/sd-015-b-project-react-testing-library/node_modules/react-app-polyfill/jsdom.js"
+  ],
+  "setupFilesAfterEnv": [
+    "<rootDir>/src/setupTests.js"
+  ],
+  "testMatch": [
+    "<rootDir>/src/**/__tests__/**/*.{js,jsx,ts,tsx}",
+    "<rootDir>/src/**/*.{spec,test}.{js,jsx,ts,tsx}"
+  ],
+  "testEnvironment": "jest-environment-jsdom-fourteen",
+  "transform": {
+    "^.+\\.(js|jsx|ts|tsx)$": "/home/find_carol/Documentos/Estudo/projetos/sd-015-b-project-react-testing-library/node_modules/react-scripts/config/jest/babelTransform.js",
+    "^.+\\.css$": "/home/find_carol/Documentos/Estudo/projetos/sd-015-b-project-react-testing-library/node_modules/react-scripts/config/jest/cssTransform.js",
+    "^(?!.*\\.(js|jsx|ts|tsx|css|json)$)": "/home/find_carol/Documentos/Estudo/projetos/sd-015-b-project-react-testing-library/node_modules/react-scripts/config/jest/fileTransform.js"
+  },
+  "transformIgnorePatterns": [
+    "[/\\\\]node_modules[/\\\\].+\\.(js|jsx|ts|tsx)$",
+    "^.+\\.module\\.(css|sass|scss)$"
+  ],
+  "modulePaths": [],
+  "moduleNameMapper": {
+    "^react-native$": "react-native-web",
+    "^.+\\.module\\.(css|sass|scss)$": "identity-obj-proxy"
+  },
+  "moduleFileExtensions": [
+    "web.js",
+    "js",
+    "web.ts",
+    "ts",
+    "web.tsx",
+    "tsx",
+    "json",
+    "web.jsx",
+    "jsx",
+    "node"
+  ],
+  "watchPlugins": [
+    "jest-watch-typeahead/filename",
+    "jest-watch-typeahead/testname"
+  ],
+  "rootDir": "/home/find_carol/Documentos/Estudo/projetos/sd-015-b-project-react-testing-library/.stryker-tmp/sandbox9606331"
+} 
+      with custom config {}
+      and default (internal) stryker config [object Object]
+15:39:01 (27240) DEBUG JestTestRunner Running jest with --findRelatedTests flag. Set jest.enableFindRelatedTests to false to run all tests on every mutant.
+15:39:01 (27240) DEBUG JestTestRunner Project root is /home/find_carol/Documentos/Estudo/projetos/sd-015-b-project-react-testing-library/.stryker-tmp/sandbox9606331
+15:39:01 (27240) TRACE JestLessThan25TestAdapter Invoking Jest with config {"roots":["<rootDir>/src"],"collectCoverageFrom":["**/*.{js,jsx}","!src/index.js","!src/serviceWorker.js"],"setupFiles":["/home/find_carol/Documentos/Estudo/projetos/sd-015-b-project-react-testing-library/node_modules/react-app-polyfill/jsdom.js"],"setupFilesAfterEnv":["<rootDir>/src/setupTests.js"],"testMatch":["<rootDir>/src/**/__tests__/**/*.{js,jsx,ts,tsx}","<rootDir>/src/**/*.{spec,test}.{js,jsx,ts,tsx}"],"testEnvironment":"jest-environment-jsdom-fourteen","transform":{"^.+\\.(js|jsx|ts|tsx)$":"/home/find_carol/Documentos/Estudo/projetos/sd-015-b-project-react-testing-library/node_modules/react-scripts/config/jest/babelTransform.js","^.+\\.css$":"/home/find_carol/Documentos/Estudo/projetos/sd-015-b-project-react-testing-library/node_modules/react-scripts/config/jest/cssTransform.js","^(?!.*\\.(js|jsx|ts|tsx|css|json)$)":"/home/find_carol/Documentos/Estudo/projetos/sd-015-b-project-react-testing-library/node_modules/react-scripts/config/jest/fileTransform.js"},"transformIgnorePatterns":["[/\\\\]node_modules[/\\\\].+\\.(js|jsx|ts|tsx)$","^.+\\.module\\.(css|sass|scss)$"],"modulePaths":[],"moduleNameMapper":{"^react-native$":"react-native-web","^.+\\.module\\.(css|sass|scss)$":"identity-obj-proxy"},"moduleFileExtensions":["web.js","js","web.ts","ts","web.tsx","tsx","json","web.jsx","jsx","node"],"watchPlugins":["jest-watch-typeahead/filename","jest-watch-typeahead/testname"],"rootDir":"/home/find_carol/Documentos/Estudo/projetos/sd-015-b-project-react-testing-library/.stryker-tmp/sandbox9606331","collectCoverage":false,"verbose":false,"bail":false,"notify":false,"reporters":[]}
+15:39:01 (27240) TRACE JestLessThan25TestAdapter Only running tests related to /home/find_carol/Documentos/Estudo/projetos/sd-015-b-project-react-testing-library/.stryker-tmp/sandbox9606331/src/components/NotFound.js
+15:39:01 (26912) DEBUG TimeoutDecorator Starting timeout timer (13436.5 ms) for a test run
+15:39:00 (27241) DEBUG ChildProcessProxyWorker Changing current working directory for this process to /home/find_carol/Documentos/Estudo/projetos/sd-015-b-project-react-testing-library/.stryker-tmp/sandbox4549570
+15:39:00 (27241) DEBUG PluginLoader Loading @stryker-mutator/* from /home/find_carol/Documentos/Estudo/projetos/sd-015-b-project-react-testing-library/node_modules/@stryker-mutator
+15:39:00 (27241) DEBUG PluginLoader Loading plugin "/home/find_carol/Documentos/Estudo/projetos/sd-015-b-project-react-testing-library/node_modules/@stryker-mutator/javascript-mutator" (matched with expression @stryker-mutator/*)
+15:39:00 (27241) DEBUG PluginLoader Loading plugin "/home/find_carol/Documentos/Estudo/projetos/sd-015-b-project-react-testing-library/node_modules/@stryker-mutator/jest-runner" (matched with expression @stryker-mutator/*)
+15:39:00 (27241) DEBUG PluginLoader Loading plugins /home/find_carol/Documentos/Estudo/projetos/sd-015-b-project-react-testing-library/node_modules/@stryker-mutator/javascript-mutator
+15:39:01 (27241) DEBUG PluginLoader Loading plugins /home/find_carol/Documentos/Estudo/projetos/sd-015-b-project-react-testing-library/node_modules/@stryker-mutator/jest-runner
+15:39:01 (27241) DEBUG PluginLoader Loading plugins /home/find_carol/Documentos/Estudo/projetos/sd-015-b-project-react-testing-library/node_modules/@stryker-mutator/core/src/reporters/index.js
+15:39:01 (27241) TRACE JestTestRunner Merging file-based config {
+  "roots": [
+    "<rootDir>/src"
+  ],
+  "collectCoverageFrom": [
+    "**/*.{js,jsx}",
+    "!src/index.js",
+    "!src/serviceWorker.js"
+  ],
+  "setupFiles": [
+    "/home/find_carol/Documentos/Estudo/projetos/sd-015-b-project-react-testing-library/node_modules/react-app-polyfill/jsdom.js"
+  ],
+  "setupFilesAfterEnv": [
+    "<rootDir>/src/setupTests.js"
+  ],
+  "testMatch": [
+    "<rootDir>/src/**/__tests__/**/*.{js,jsx,ts,tsx}",
+    "<rootDir>/src/**/*.{spec,test}.{js,jsx,ts,tsx}"
+  ],
+  "testEnvironment": "jest-environment-jsdom-fourteen",
+  "transform": {
+    "^.+\\.(js|jsx|ts|tsx)$": "/home/find_carol/Documentos/Estudo/projetos/sd-015-b-project-react-testing-library/node_modules/react-scripts/config/jest/babelTransform.js",
+    "^.+\\.css$": "/home/find_carol/Documentos/Estudo/projetos/sd-015-b-project-react-testing-library/node_modules/react-scripts/config/jest/cssTransform.js",
+    "^(?!.*\\.(js|jsx|ts|tsx|css|json)$)": "/home/find_carol/Documentos/Estudo/projetos/sd-015-b-project-react-testing-library/node_modules/react-scripts/config/jest/fileTransform.js"
+  },
+  "transformIgnorePatterns": [
+    "[/\\\\]node_modules[/\\\\].+\\.(js|jsx|ts|tsx)$",
+    "^.+\\.module\\.(css|sass|scss)$"
+  ],
+  "modulePaths": [],
+  "moduleNameMapper": {
+    "^react-native$": "react-native-web",
+    "^.+\\.module\\.(css|sass|scss)$": "identity-obj-proxy"
+  },
+  "moduleFileExtensions": [
+    "web.js",
+    "js",
+    "web.ts",
+    "ts",
+    "web.tsx",
+    "tsx",
+    "json",
+    "web.jsx",
+    "jsx",
+    "node"
+  ],
+  "watchPlugins": [
+    "jest-watch-typeahead/filename",
+    "jest-watch-typeahead/testname"
+  ],
+  "rootDir": "/home/find_carol/Documentos/Estudo/projetos/sd-015-b-project-react-testing-library/.stryker-tmp/sandbox4549570"
+} 
+      with custom config {}
+      and default (internal) stryker config [object Object]
+15:39:01 (27241) DEBUG JestTestRunner Running jest with --findRelatedTests flag. Set jest.enableFindRelatedTests to false to run all tests on every mutant.
+15:39:01 (27241) DEBUG JestTestRunner Project root is /home/find_carol/Documentos/Estudo/projetos/sd-015-b-project-react-testing-library/.stryker-tmp/sandbox4549570
+15:39:01 (27241) TRACE JestLessThan25TestAdapter Invoking Jest with config {"roots":["<rootDir>/src"],"collectCoverageFrom":["**/*.{js,jsx}","!src/index.js","!src/serviceWorker.js"],"setupFiles":["/home/find_carol/Documentos/Estudo/projetos/sd-015-b-project-react-testing-library/node_modules/react-app-polyfill/jsdom.js"],"setupFilesAfterEnv":["<rootDir>/src/setupTests.js"],"testMatch":["<rootDir>/src/**/__tests__/**/*.{js,jsx,ts,tsx}","<rootDir>/src/**/*.{spec,test}.{js,jsx,ts,tsx}"],"testEnvironment":"jest-environment-jsdom-fourteen","transform":{"^.+\\.(js|jsx|ts|tsx)$":"/home/find_carol/Documentos/Estudo/projetos/sd-015-b-project-react-testing-library/node_modules/react-scripts/config/jest/babelTransform.js","^.+\\.css$":"/home/find_carol/Documentos/Estudo/projetos/sd-015-b-project-react-testing-library/node_modules/react-scripts/config/jest/cssTransform.js","^(?!.*\\.(js|jsx|ts|tsx|css|json)$)":"/home/find_carol/Documentos/Estudo/projetos/sd-015-b-project-react-testing-library/node_modules/react-scripts/config/jest/fileTransform.js"},"transformIgnorePatterns":["[/\\\\]node_modules[/\\\\].+\\.(js|jsx|ts|tsx)$","^.+\\.module\\.(css|sass|scss)$"],"modulePaths":[],"moduleNameMapper":{"^react-native$":"react-native-web","^.+\\.module\\.(css|sass|scss)$":"identity-obj-proxy"},"moduleFileExtensions":["web.js","js","web.ts","ts","web.tsx","tsx","json","web.jsx","jsx","node"],"watchPlugins":["jest-watch-typeahead/filename","jest-watch-typeahead/testname"],"rootDir":"/home/find_carol/Documentos/Estudo/projetos/sd-015-b-project-react-testing-library/.stryker-tmp/sandbox4549570","collectCoverage":false,"verbose":false,"bail":false,"notify":false,"reporters":[]}
+15:39:01 (27241) TRACE JestLessThan25TestAdapter Only running tests related to /home/find_carol/Documentos/Estudo/projetos/sd-015-b-project-react-testing-library/.stryker-tmp/sandbox4549570/src/components/Pokedex.js
+15:39:03 (26912) DEBUG TimeoutDecorator Starting timeout timer (13436.5 ms) for a test run
+15:39:03 (27019) TRACE JestLessThan25TestAdapter Invoking Jest with config {"roots":["<rootDir>/src"],"collectCoverageFrom":["**/*.{js,jsx}","!src/index.js","!src/serviceWorker.js"],"setupFiles":["/home/find_carol/Documentos/Estudo/projetos/sd-015-b-project-react-testing-library/node_modules/react-app-polyfill/jsdom.js"],"setupFilesAfterEnv":["<rootDir>/src/setupTests.js"],"testMatch":["<rootDir>/src/**/__tests__/**/*.{js,jsx,ts,tsx}","<rootDir>/src/**/*.{spec,test}.{js,jsx,ts,tsx}"],"testEnvironment":"jest-environment-jsdom-fourteen","transform":{"^.+\\.(js|jsx|ts|tsx)$":"/home/find_carol/Documentos/Estudo/projetos/sd-015-b-project-react-testing-library/node_modules/react-scripts/config/jest/babelTransform.js","^.+\\.css$":"/home/find_carol/Documentos/Estudo/projetos/sd-015-b-project-react-testing-library/node_modules/react-scripts/config/jest/cssTransform.js","^(?!.*\\.(js|jsx|ts|tsx|css|json)$)":"/home/find_carol/Documentos/Estudo/projetos/sd-015-b-project-react-testing-library/node_modules/react-scripts/config/jest/fileTransform.js"},"transformIgnorePatterns":["[/\\\\]node_modules[/\\\\].+\\.(js|jsx|ts|tsx)$","^.+\\.module\\.(css|sass|scss)$"],"modulePaths":[],"moduleNameMapper":{"^react-native$":"react-native-web","^.+\\.module\\.(css|sass|scss)$":"identity-obj-proxy"},"moduleFileExtensions":["web.js","js","web.ts","ts","web.tsx","tsx","json","web.jsx","jsx","node"],"watchPlugins":["jest-watch-typeahead/filename","jest-watch-typeahead/testname"],"rootDir":"/home/find_carol/Documentos/Estudo/projetos/sd-015-b-project-react-testing-library/.stryker-tmp/sandbox5219006","collectCoverage":false,"verbose":false,"bail":false,"notify":false,"reporters":[]}
+15:39:03 (27019) TRACE JestLessThan25TestAdapter Only running tests related to /home/find_carol/Documentos/Estudo/projetos/sd-015-b-project-react-testing-library/.stryker-tmp/sandbox5219006/src/components/Pokedex.js
+15:39:04 (26912) DEBUG TimeoutDecorator Starting timeout timer (13436.5 ms) for a test run
+15:39:04 (27025) TRACE JestLessThan25TestAdapter Invoking Jest with config {"roots":["<rootDir>/src"],"collectCoverageFrom":["**/*.{js,jsx}","!src/index.js","!src/serviceWorker.js"],"setupFiles":["/home/find_carol/Documentos/Estudo/projetos/sd-015-b-project-react-testing-library/node_modules/react-app-polyfill/jsdom.js"],"setupFilesAfterEnv":["<rootDir>/src/setupTests.js"],"testMatch":["<rootDir>/src/**/__tests__/**/*.{js,jsx,ts,tsx}","<rootDir>/src/**/*.{spec,test}.{js,jsx,ts,tsx}"],"testEnvironment":"jest-environment-jsdom-fourteen","transform":{"^.+\\.(js|jsx|ts|tsx)$":"/home/find_carol/Documentos/Estudo/projetos/sd-015-b-project-react-testing-library/node_modules/react-scripts/config/jest/babelTransform.js","^.+\\.css$":"/home/find_carol/Documentos/Estudo/projetos/sd-015-b-project-react-testing-library/node_modules/react-scripts/config/jest/cssTransform.js","^(?!.*\\.(js|jsx|ts|tsx|css|json)$)":"/home/find_carol/Documentos/Estudo/projetos/sd-015-b-project-react-testing-library/node_modules/react-scripts/config/jest/fileTransform.js"},"transformIgnorePatterns":["[/\\\\]node_modules[/\\\\].+\\.(js|jsx|ts|tsx)$","^.+\\.module\\.(css|sass|scss)$"],"modulePaths":[],"moduleNameMapper":{"^react-native$":"react-native-web","^.+\\.module\\.(css|sass|scss)$":"identity-obj-proxy"},"moduleFileExtensions":["web.js","js","web.ts","ts","web.tsx","tsx","json","web.jsx","jsx","node"],"watchPlugins":["jest-watch-typeahead/filename","jest-watch-typeahead/testname"],"rootDir":"/home/find_carol/Documentos/Estudo/projetos/sd-015-b-project-react-testing-library/.stryker-tmp/sandbox8872959","collectCoverage":false,"verbose":false,"bail":false,"notify":false,"reporters":[]}
+15:39:04 (27025) TRACE JestLessThan25TestAdapter Only running tests related to /home/find_carol/Documentos/Estudo/projetos/sd-015-b-project-react-testing-library/.stryker-tmp/sandbox8872959/src/components/Pokedex.js
+15:39:04 (26912) DEBUG TimeoutDecorator Starting timeout timer (13436.5 ms) for a test run
+15:39:04 (27064) TRACE JestLessThan25TestAdapter Invoking Jest with config {"roots":["<rootDir>/src"],"collectCoverageFrom":["**/*.{js,jsx}","!src/index.js","!src/serviceWorker.js"],"setupFiles":["/home/find_carol/Documentos/Estudo/projetos/sd-015-b-project-react-testing-library/node_modules/react-app-polyfill/jsdom.js"],"setupFilesAfterEnv":["<rootDir>/src/setupTests.js"],"testMatch":["<rootDir>/src/**/__tests__/**/*.{js,jsx,ts,tsx}","<rootDir>/src/**/*.{spec,test}.{js,jsx,ts,tsx}"],"testEnvironment":"jest-environment-jsdom-fourteen","transform":{"^.+\\.(js|jsx|ts|tsx)$":"/home/find_carol/Documentos/Estudo/projetos/sd-015-b-project-react-testing-library/node_modules/react-scripts/config/jest/babelTransform.js","^.+\\.css$":"/home/find_carol/Documentos/Estudo/projetos/sd-015-b-project-react-testing-library/node_modules/react-scripts/config/jest/cssTransform.js","^(?!.*\\.(js|jsx|ts|tsx|css|json)$)":"/home/find_carol/Documentos/Estudo/projetos/sd-015-b-project-react-testing-library/node_modules/react-scripts/config/jest/fileTransform.js"},"transformIgnorePatterns":["[/\\\\]node_modules[/\\\\].+\\.(js|jsx|ts|tsx)$","^.+\\.module\\.(css|sass|scss)$"],"modulePaths":[],"moduleNameMapper":{"^react-native$":"react-native-web","^.+\\.module\\.(css|sass|scss)$":"identity-obj-proxy"},"moduleFileExtensions":["web.js","js","web.ts","ts","web.tsx","tsx","json","web.jsx","jsx","node"],"watchPlugins":["jest-watch-typeahead/filename","jest-watch-typeahead/testname"],"rootDir":"/home/find_carol/Documentos/Estudo/projetos/sd-015-b-project-react-testing-library/.stryker-tmp/sandbox9883167","collectCoverage":false,"verbose":false,"bail":false,"notify":false,"reporters":[]}
+15:39:04 (27064) TRACE JestLessThan25TestAdapter Only running tests related to /home/find_carol/Documentos/Estudo/projetos/sd-015-b-project-react-testing-library/.stryker-tmp/sandbox9883167/src/components/Pokedex.js
+15:39:05 (26912) DEBUG TimeoutDecorator Starting timeout timer (13436.5 ms) for a test run
+15:39:05 (27057) TRACE JestLessThan25TestAdapter Invoking Jest with config {"roots":["<rootDir>/src"],"collectCoverageFrom":["**/*.{js,jsx}","!src/index.js","!src/serviceWorker.js"],"setupFiles":["/home/find_carol/Documentos/Estudo/projetos/sd-015-b-project-react-testing-library/node_modules/react-app-polyfill/jsdom.js"],"setupFilesAfterEnv":["<rootDir>/src/setupTests.js"],"testMatch":["<rootDir>/src/**/__tests__/**/*.{js,jsx,ts,tsx}","<rootDir>/src/**/*.{spec,test}.{js,jsx,ts,tsx}"],"testEnvironment":"jest-environment-jsdom-fourteen","transform":{"^.+\\.(js|jsx|ts|tsx)$":"/home/find_carol/Documentos/Estudo/projetos/sd-015-b-project-react-testing-library/node_modules/react-scripts/config/jest/babelTransform.js","^.+\\.css$":"/home/find_carol/Documentos/Estudo/projetos/sd-015-b-project-react-testing-library/node_modules/react-scripts/config/jest/cssTransform.js","^(?!.*\\.(js|jsx|ts|tsx|css|json)$)":"/home/find_carol/Documentos/Estudo/projetos/sd-015-b-project-react-testing-library/node_modules/react-scripts/config/jest/fileTransform.js"},"transformIgnorePatterns":["[/\\\\]node_modules[/\\\\].+\\.(js|jsx|ts|tsx)$","^.+\\.module\\.(css|sass|scss)$"],"modulePaths":[],"moduleNameMapper":{"^react-native$":"react-native-web","^.+\\.module\\.(css|sass|scss)$":"identity-obj-proxy"},"moduleFileExtensions":["web.js","js","web.ts","ts","web.tsx","tsx","json","web.jsx","jsx","node"],"watchPlugins":["jest-watch-typeahead/filename","jest-watch-typeahead/testname"],"rootDir":"/home/find_carol/Documentos/Estudo/projetos/sd-015-b-project-react-testing-library/.stryker-tmp/sandbox1384923","collectCoverage":false,"verbose":false,"bail":false,"notify":false,"reporters":[]}
+15:39:05 (27057) TRACE JestLessThan25TestAdapter Only running tests related to /home/find_carol/Documentos/Estudo/projetos/sd-015-b-project-react-testing-library/.stryker-tmp/sandbox1384923/src/components/Pokedex.js
+15:39:05 (26912) DEBUG TimeoutDecorator Starting timeout timer (13436.5 ms) for a test run
+15:39:05 (27098) TRACE JestLessThan25TestAdapter Invoking Jest with config {"roots":["<rootDir>/src"],"collectCoverageFrom":["**/*.{js,jsx}","!src/index.js","!src/serviceWorker.js"],"setupFiles":["/home/find_carol/Documentos/Estudo/projetos/sd-015-b-project-react-testing-library/node_modules/react-app-polyfill/jsdom.js"],"setupFilesAfterEnv":["<rootDir>/src/setupTests.js"],"testMatch":["<rootDir>/src/**/__tests__/**/*.{js,jsx,ts,tsx}","<rootDir>/src/**/*.{spec,test}.{js,jsx,ts,tsx}"],"testEnvironment":"jest-environment-jsdom-fourteen","transform":{"^.+\\.(js|jsx|ts|tsx)$":"/home/find_carol/Documentos/Estudo/projetos/sd-015-b-project-react-testing-library/node_modules/react-scripts/config/jest/babelTransform.js","^.+\\.css$":"/home/find_carol/Documentos/Estudo/projetos/sd-015-b-project-react-testing-library/node_modules/react-scripts/config/jest/cssTransform.js","^(?!.*\\.(js|jsx|ts|tsx|css|json)$)":"/home/find_carol/Documentos/Estudo/projetos/sd-015-b-project-react-testing-library/node_modules/react-scripts/config/jest/fileTransform.js"},"transformIgnorePatterns":["[/\\\\]node_modules[/\\\\].+\\.(js|jsx|ts|tsx)$","^.+\\.module\\.(css|sass|scss)$"],"modulePaths":[],"moduleNameMapper":{"^react-native$":"react-native-web","^.+\\.module\\.(css|sass|scss)$":"identity-obj-proxy"},"moduleFileExtensions":["web.js","js","web.ts","ts","web.tsx","tsx","json","web.jsx","jsx","node"],"watchPlugins":["jest-watch-typeahead/filename","jest-watch-typeahead/testname"],"rootDir":"/home/find_carol/Documentos/Estudo/projetos/sd-015-b-project-react-testing-library/.stryker-tmp/sandbox2857203","collectCoverage":false,"verbose":false,"bail":false,"notify":false,"reporters":[]}
+15:39:05 (27098) TRACE JestLessThan25TestAdapter Only running tests related to /home/find_carol/Documentos/Estudo/projetos/sd-015-b-project-react-testing-library/.stryker-tmp/sandbox2857203/src/components/Pokemon.js
+15:39:05 (26912) DEBUG TimeoutDecorator Starting timeout timer (13436.5 ms) for a test run
+15:39:05 (27019) TRACE JestLessThan25TestAdapter Invoking Jest with config {"roots":["<rootDir>/src"],"collectCoverageFrom":["**/*.{js,jsx}","!src/index.js","!src/serviceWorker.js"],"setupFiles":["/home/find_carol/Documentos/Estudo/projetos/sd-015-b-project-react-testing-library/node_modules/react-app-polyfill/jsdom.js"],"setupFilesAfterEnv":["<rootDir>/src/setupTests.js"],"testMatch":["<rootDir>/src/**/__tests__/**/*.{js,jsx,ts,tsx}","<rootDir>/src/**/*.{spec,test}.{js,jsx,ts,tsx}"],"testEnvironment":"jest-environment-jsdom-fourteen","transform":{"^.+\\.(js|jsx|ts|tsx)$":"/home/find_carol/Documentos/Estudo/projetos/sd-015-b-project-react-testing-library/node_modules/react-scripts/config/jest/babelTransform.js","^.+\\.css$":"/home/find_carol/Documentos/Estudo/projetos/sd-015-b-project-react-testing-library/node_modules/react-scripts/config/jest/cssTransform.js","^(?!.*\\.(js|jsx|ts|tsx|css|json)$)":"/home/find_carol/Documentos/Estudo/projetos/sd-015-b-project-react-testing-library/node_modules/react-scripts/config/jest/fileTransform.js"},"transformIgnorePatterns":["[/\\\\]node_modules[/\\\\].+\\.(js|jsx|ts|tsx)$","^.+\\.module\\.(css|sass|scss)$"],"modulePaths":[],"moduleNameMapper":{"^react-native$":"react-native-web","^.+\\.module\\.(css|sass|scss)$":"identity-obj-proxy"},"moduleFileExtensions":["web.js","js","web.ts","ts","web.tsx","tsx","json","web.jsx","jsx","node"],"watchPlugins":["jest-watch-typeahead/filename","jest-watch-typeahead/testname"],"rootDir":"/home/find_carol/Documentos/Estudo/projetos/sd-015-b-project-react-testing-library/.stryker-tmp/sandbox5219006","collectCoverage":false,"verbose":false,"bail":false,"notify":false,"reporters":[]}
+15:39:05 (27019) TRACE JestLessThan25TestAdapter Only running tests related to /home/find_carol/Documentos/Estudo/projetos/sd-015-b-project-react-testing-library/.stryker-tmp/sandbox5219006/src/components/Pokemon.js
+15:39:06 (26912) DEBUG TimeoutDecorator Starting timeout timer (13436.5 ms) for a test run
+15:39:06 (27188) TRACE JestLessThan25TestAdapter Invoking Jest with config {"roots":["<rootDir>/src"],"collectCoverageFrom":["**/*.{js,jsx}","!src/index.js","!src/serviceWorker.js"],"setupFiles":["/home/find_carol/Documentos/Estudo/projetos/sd-015-b-project-react-testing-library/node_modules/react-app-polyfill/jsdom.js"],"setupFilesAfterEnv":["<rootDir>/src/setupTests.js"],"testMatch":["<rootDir>/src/**/__tests__/**/*.{js,jsx,ts,tsx}","<rootDir>/src/**/*.{spec,test}.{js,jsx,ts,tsx}"],"testEnvironment":"jest-environment-jsdom-fourteen","transform":{"^.+\\.(js|jsx|ts|tsx)$":"/home/find_carol/Documentos/Estudo/projetos/sd-015-b-project-react-testing-library/node_modules/react-scripts/config/jest/babelTransform.js","^.+\\.css$":"/home/find_carol/Documentos/Estudo/projetos/sd-015-b-project-react-testing-library/node_modules/react-scripts/config/jest/cssTransform.js","^(?!.*\\.(js|jsx|ts|tsx|css|json)$)":"/home/find_carol/Documentos/Estudo/projetos/sd-015-b-project-react-testing-library/node_modules/react-scripts/config/jest/fileTransform.js"},"transformIgnorePatterns":["[/\\\\]node_modules[/\\\\].+\\.(js|jsx|ts|tsx)$","^.+\\.module\\.(css|sass|scss)$"],"modulePaths":[],"moduleNameMapper":{"^react-native$":"react-native-web","^.+\\.module\\.(css|sass|scss)$":"identity-obj-proxy"},"moduleFileExtensions":["web.js","js","web.ts","ts","web.tsx","tsx","json","web.jsx","jsx","node"],"watchPlugins":["jest-watch-typeahead/filename","jest-watch-typeahead/testname"],"rootDir":"/home/find_carol/Documentos/Estudo/projetos/sd-015-b-project-react-testing-library/.stryker-tmp/sandbox9671805","collectCoverage":false,"verbose":false,"bail":false,"notify":false,"reporters":[]}
+15:39:06 (27188) TRACE JestLessThan25TestAdapter Only running tests related to /home/find_carol/Documentos/Estudo/projetos/sd-015-b-project-react-testing-library/.stryker-tmp/sandbox9671805/src/components/Pokemon.js
+15:39:06 (26912) DEBUG TimeoutDecorator Starting timeout timer (13436.5 ms) for a test run
+15:39:06 (27104) TRACE JestLessThan25TestAdapter Invoking Jest with config {"roots":["<rootDir>/src"],"collectCoverageFrom":["**/*.{js,jsx}","!src/index.js","!src/serviceWorker.js"],"setupFiles":["/home/find_carol/Documentos/Estudo/projetos/sd-015-b-project-react-testing-library/node_modules/react-app-polyfill/jsdom.js"],"setupFilesAfterEnv":["<rootDir>/src/setupTests.js"],"testMatch":["<rootDir>/src/**/__tests__/**/*.{js,jsx,ts,tsx}","<rootDir>/src/**/*.{spec,test}.{js,jsx,ts,tsx}"],"testEnvironment":"jest-environment-jsdom-fourteen","transform":{"^.+\\.(js|jsx|ts|tsx)$":"/home/find_carol/Documentos/Estudo/projetos/sd-015-b-project-react-testing-library/node_modules/react-scripts/config/jest/babelTransform.js","^.+\\.css$":"/home/find_carol/Documentos/Estudo/projetos/sd-015-b-project-react-testing-library/node_modules/react-scripts/config/jest/cssTransform.js","^(?!.*\\.(js|jsx|ts|tsx|css|json)$)":"/home/find_carol/Documentos/Estudo/projetos/sd-015-b-project-react-testing-library/node_modules/react-scripts/config/jest/fileTransform.js"},"transformIgnorePatterns":["[/\\\\]node_modules[/\\\\].+\\.(js|jsx|ts|tsx)$","^.+\\.module\\.(css|sass|scss)$"],"modulePaths":[],"moduleNameMapper":{"^react-native$":"react-native-web","^.+\\.module\\.(css|sass|scss)$":"identity-obj-proxy"},"moduleFileExtensions":["web.js","js","web.ts","ts","web.tsx","tsx","json","web.jsx","jsx","node"],"watchPlugins":["jest-watch-typeahead/filename","jest-watch-typeahead/testname"],"rootDir":"/home/find_carol/Documentos/Estudo/projetos/sd-015-b-project-react-testing-library/.stryker-tmp/sandbox1422404","collectCoverage":false,"verbose":false,"bail":false,"notify":false,"reporters":[]}
+15:39:06 (27104) TRACE JestLessThan25TestAdapter Only running tests related to /home/find_carol/Documentos/Estudo/projetos/sd-015-b-project-react-testing-library/.stryker-tmp/sandbox1422404/src/components/Pokemon.js
+15:39:06 (26912) DEBUG TimeoutDecorator Starting timeout timer (13436.5 ms) for a test run
+15:39:06 (27182) TRACE JestLessThan25TestAdapter Invoking Jest with config {"roots":["<rootDir>/src"],"collectCoverageFrom":["**/*.{js,jsx}","!src/index.js","!src/serviceWorker.js"],"setupFiles":["/home/find_carol/Documentos/Estudo/projetos/sd-015-b-project-react-testing-library/node_modules/react-app-polyfill/jsdom.js"],"setupFilesAfterEnv":["<rootDir>/src/setupTests.js"],"testMatch":["<rootDir>/src/**/__tests__/**/*.{js,jsx,ts,tsx}","<rootDir>/src/**/*.{spec,test}.{js,jsx,ts,tsx}"],"testEnvironment":"jest-environment-jsdom-fourteen","transform":{"^.+\\.(js|jsx|ts|tsx)$":"/home/find_carol/Documentos/Estudo/projetos/sd-015-b-project-react-testing-library/node_modules/react-scripts/config/jest/babelTransform.js","^.+\\.css$":"/home/find_carol/Documentos/Estudo/projetos/sd-015-b-project-react-testing-library/node_modules/react-scripts/config/jest/cssTransform.js","^(?!.*\\.(js|jsx|ts|tsx|css|json)$)":"/home/find_carol/Documentos/Estudo/projetos/sd-015-b-project-react-testing-library/node_modules/react-scripts/config/jest/fileTransform.js"},"transformIgnorePatterns":["[/\\\\]node_modules[/\\\\].+\\.(js|jsx|ts|tsx)$","^.+\\.module\\.(css|sass|scss)$"],"modulePaths":[],"moduleNameMapper":{"^react-native$":"react-native-web","^.+\\.module\\.(css|sass|scss)$":"identity-obj-proxy"},"moduleFileExtensions":["web.js","js","web.ts","ts","web.tsx","tsx","json","web.jsx","jsx","node"],"watchPlugins":["jest-watch-typeahead/filename","jest-watch-typeahead/testname"],"rootDir":"/home/find_carol/Documentos/Estudo/projetos/sd-015-b-project-react-testing-library/.stryker-tmp/sandbox5521869","collectCoverage":false,"verbose":false,"bail":false,"notify":false,"reporters":[]}
+15:39:06 (27182) TRACE JestLessThan25TestAdapter Only running tests related to /home/find_carol/Documentos/Estudo/projetos/sd-015-b-project-react-testing-library/.stryker-tmp/sandbox5521869/src/components/Pokemon.js
+15:39:06 (26912) DEBUG TimeoutDecorator Starting timeout timer (13436.5 ms) for a test run
+15:39:06 (27025) TRACE JestLessThan25TestAdapter Invoking Jest with config {"roots":["<rootDir>/src"],"collectCoverageFrom":["**/*.{js,jsx}","!src/index.js","!src/serviceWorker.js"],"setupFiles":["/home/find_carol/Documentos/Estudo/projetos/sd-015-b-project-react-testing-library/node_modules/react-app-polyfill/jsdom.js"],"setupFilesAfterEnv":["<rootDir>/src/setupTests.js"],"testMatch":["<rootDir>/src/**/__tests__/**/*.{js,jsx,ts,tsx}","<rootDir>/src/**/*.{spec,test}.{js,jsx,ts,tsx}"],"testEnvironment":"jest-environment-jsdom-fourteen","transform":{"^.+\\.(js|jsx|ts|tsx)$":"/home/find_carol/Documentos/Estudo/projetos/sd-015-b-project-react-testing-library/node_modules/react-scripts/config/jest/babelTransform.js","^.+\\.css$":"/home/find_carol/Documentos/Estudo/projetos/sd-015-b-project-react-testing-library/node_modules/react-scripts/config/jest/cssTransform.js","^(?!.*\\.(js|jsx|ts|tsx|css|json)$)":"/home/find_carol/Documentos/Estudo/projetos/sd-015-b-project-react-testing-library/node_modules/react-scripts/config/jest/fileTransform.js"},"transformIgnorePatterns":["[/\\\\]node_modules[/\\\\].+\\.(js|jsx|ts|tsx)$","^.+\\.module\\.(css|sass|scss)$"],"modulePaths":[],"moduleNameMapper":{"^react-native$":"react-native-web","^.+\\.module\\.(css|sass|scss)$":"identity-obj-proxy"},"moduleFileExtensions":["web.js","js","web.ts","ts","web.tsx","tsx","json","web.jsx","jsx","node"],"watchPlugins":["jest-watch-typeahead/filename","jest-watch-typeahead/testname"],"rootDir":"/home/find_carol/Documentos/Estudo/projetos/sd-015-b-project-react-testing-library/.stryker-tmp/sandbox8872959","collectCoverage":false,"verbose":false,"bail":false,"notify":false,"reporters":[]}
+15:39:06 (27025) TRACE JestLessThan25TestAdapter Only running tests related to /home/find_carol/Documentos/Estudo/projetos/sd-015-b-project-react-testing-library/.stryker-tmp/sandbox8872959/src/components/Pokemon.js
+15:39:06 (26912) DEBUG TimeoutDecorator Starting timeout timer (13436.5 ms) for a test run
+15:39:06 (27064) TRACE JestLessThan25TestAdapter Invoking Jest with config {"roots":["<rootDir>/src"],"collectCoverageFrom":["**/*.{js,jsx}","!src/index.js","!src/serviceWorker.js"],"setupFiles":["/home/find_carol/Documentos/Estudo/projetos/sd-015-b-project-react-testing-library/node_modules/react-app-polyfill/jsdom.js"],"setupFilesAfterEnv":["<rootDir>/src/setupTests.js"],"testMatch":["<rootDir>/src/**/__tests__/**/*.{js,jsx,ts,tsx}","<rootDir>/src/**/*.{spec,test}.{js,jsx,ts,tsx}"],"testEnvironment":"jest-environment-jsdom-fourteen","transform":{"^.+\\.(js|jsx|ts|tsx)$":"/home/find_carol/Documentos/Estudo/projetos/sd-015-b-project-react-testing-library/node_modules/react-scripts/config/jest/babelTransform.js","^.+\\.css$":"/home/find_carol/Documentos/Estudo/projetos/sd-015-b-project-react-testing-library/node_modules/react-scripts/config/jest/cssTransform.js","^(?!.*\\.(js|jsx|ts|tsx|css|json)$)":"/home/find_carol/Documentos/Estudo/projetos/sd-015-b-project-react-testing-library/node_modules/react-scripts/config/jest/fileTransform.js"},"transformIgnorePatterns":["[/\\\\]node_modules[/\\\\].+\\.(js|jsx|ts|tsx)$","^.+\\.module\\.(css|sass|scss)$"],"modulePaths":[],"moduleNameMapper":{"^react-native$":"react-native-web","^.+\\.module\\.(css|sass|scss)$":"identity-obj-proxy"},"moduleFileExtensions":["web.js","js","web.ts","ts","web.tsx","tsx","json","web.jsx","jsx","node"],"watchPlugins":["jest-watch-typeahead/filename","jest-watch-typeahead/testname"],"rootDir":"/home/find_carol/Documentos/Estudo/projetos/sd-015-b-project-react-testing-library/.stryker-tmp/sandbox9883167","collectCoverage":false,"verbose":false,"bail":false,"notify":false,"reporters":[]}
+15:39:06 (27064) TRACE JestLessThan25TestAdapter Only running tests related to /home/find_carol/Documentos/Estudo/projetos/sd-015-b-project-react-testing-library/.stryker-tmp/sandbox9883167/src/components/PokemonDetails.js
+15:39:07 (26912) DEBUG TimeoutDecorator Starting timeout timer (13436.5 ms) for a test run
+15:39:07 (27098) TRACE JestLessThan25TestAdapter Invoking Jest with config {"roots":["<rootDir>/src"],"collectCoverageFrom":["**/*.{js,jsx}","!src/index.js","!src/serviceWorker.js"],"setupFiles":["/home/find_carol/Documentos/Estudo/projetos/sd-015-b-project-react-testing-library/node_modules/react-app-polyfill/jsdom.js"],"setupFilesAfterEnv":["<rootDir>/src/setupTests.js"],"testMatch":["<rootDir>/src/**/__tests__/**/*.{js,jsx,ts,tsx}","<rootDir>/src/**/*.{spec,test}.{js,jsx,ts,tsx}"],"testEnvironment":"jest-environment-jsdom-fourteen","transform":{"^.+\\.(js|jsx|ts|tsx)$":"/home/find_carol/Documentos/Estudo/projetos/sd-015-b-project-react-testing-library/node_modules/react-scripts/config/jest/babelTransform.js","^.+\\.css$":"/home/find_carol/Documentos/Estudo/projetos/sd-015-b-project-react-testing-library/node_modules/react-scripts/config/jest/cssTransform.js","^(?!.*\\.(js|jsx|ts|tsx|css|json)$)":"/home/find_carol/Documentos/Estudo/projetos/sd-015-b-project-react-testing-library/node_modules/react-scripts/config/jest/fileTransform.js"},"transformIgnorePatterns":["[/\\\\]node_modules[/\\\\].+\\.(js|jsx|ts|tsx)$","^.+\\.module\\.(css|sass|scss)$"],"modulePaths":[],"moduleNameMapper":{"^react-native$":"react-native-web","^.+\\.module\\.(css|sass|scss)$":"identity-obj-proxy"},"moduleFileExtensions":["web.js","js","web.ts","ts","web.tsx","tsx","json","web.jsx","jsx","node"],"watchPlugins":["jest-watch-typeahead/filename","jest-watch-typeahead/testname"],"rootDir":"/home/find_carol/Documentos/Estudo/projetos/sd-015-b-project-react-testing-library/.stryker-tmp/sandbox2857203","collectCoverage":false,"verbose":false,"bail":false,"notify":false,"reporters":[]}
+15:39:07 (27098) TRACE JestLessThan25TestAdapter Only running tests related to /home/find_carol/Documentos/Estudo/projetos/sd-015-b-project-react-testing-library/.stryker-tmp/sandbox2857203/src/components/PokemonDetails.js
+15:39:07 (26912) DEBUG TimeoutDecorator Starting timeout timer (13436.5 ms) for a test run
+15:39:07 (27057) TRACE JestLessThan25TestAdapter Invoking Jest with config {"roots":["<rootDir>/src"],"collectCoverageFrom":["**/*.{js,jsx}","!src/index.js","!src/serviceWorker.js"],"setupFiles":["/home/find_carol/Documentos/Estudo/projetos/sd-015-b-project-react-testing-library/node_modules/react-app-polyfill/jsdom.js"],"setupFilesAfterEnv":["<rootDir>/src/setupTests.js"],"testMatch":["<rootDir>/src/**/__tests__/**/*.{js,jsx,ts,tsx}","<rootDir>/src/**/*.{spec,test}.{js,jsx,ts,tsx}"],"testEnvironment":"jest-environment-jsdom-fourteen","transform":{"^.+\\.(js|jsx|ts|tsx)$":"/home/find_carol/Documentos/Estudo/projetos/sd-015-b-project-react-testing-library/node_modules/react-scripts/config/jest/babelTransform.js","^.+\\.css$":"/home/find_carol/Documentos/Estudo/projetos/sd-015-b-project-react-testing-library/node_modules/react-scripts/config/jest/cssTransform.js","^(?!.*\\.(js|jsx|ts|tsx|css|json)$)":"/home/find_carol/Documentos/Estudo/projetos/sd-015-b-project-react-testing-library/node_modules/react-scripts/config/jest/fileTransform.js"},"transformIgnorePatterns":["[/\\\\]node_modules[/\\\\].+\\.(js|jsx|ts|tsx)$","^.+\\.module\\.(css|sass|scss)$"],"modulePaths":[],"moduleNameMapper":{"^react-native$":"react-native-web","^.+\\.module\\.(css|sass|scss)$":"identity-obj-proxy"},"moduleFileExtensions":["web.js","js","web.ts","ts","web.tsx","tsx","json","web.jsx","jsx","node"],"watchPlugins":["jest-watch-typeahead/filename","jest-watch-typeahead/testname"],"rootDir":"/home/find_carol/Documentos/Estudo/projetos/sd-015-b-project-react-testing-library/.stryker-tmp/sandbox1384923","collectCoverage":false,"verbose":false,"bail":false,"notify":false,"reporters":[]}
+15:39:07 (27057) TRACE JestLessThan25TestAdapter Only running tests related to /home/find_carol/Documentos/Estudo/projetos/sd-015-b-project-react-testing-library/.stryker-tmp/sandbox1384923/src/components/PokemonDetails.js
+15:39:07 (26912) DEBUG TimeoutDecorator Starting timeout timer (13436.5 ms) for a test run
+15:39:07 (27019) TRACE JestLessThan25TestAdapter Invoking Jest with config {"roots":["<rootDir>/src"],"collectCoverageFrom":["**/*.{js,jsx}","!src/index.js","!src/serviceWorker.js"],"setupFiles":["/home/find_carol/Documentos/Estudo/projetos/sd-015-b-project-react-testing-library/node_modules/react-app-polyfill/jsdom.js"],"setupFilesAfterEnv":["<rootDir>/src/setupTests.js"],"testMatch":["<rootDir>/src/**/__tests__/**/*.{js,jsx,ts,tsx}","<rootDir>/src/**/*.{spec,test}.{js,jsx,ts,tsx}"],"testEnvironment":"jest-environment-jsdom-fourteen","transform":{"^.+\\.(js|jsx|ts|tsx)$":"/home/find_carol/Documentos/Estudo/projetos/sd-015-b-project-react-testing-library/node_modules/react-scripts/config/jest/babelTransform.js","^.+\\.css$":"/home/find_carol/Documentos/Estudo/projetos/sd-015-b-project-react-testing-library/node_modules/react-scripts/config/jest/cssTransform.js","^(?!.*\\.(js|jsx|ts|tsx|css|json)$)":"/home/find_carol/Documentos/Estudo/projetos/sd-015-b-project-react-testing-library/node_modules/react-scripts/config/jest/fileTransform.js"},"transformIgnorePatterns":["[/\\\\]node_modules[/\\\\].+\\.(js|jsx|ts|tsx)$","^.+\\.module\\.(css|sass|scss)$"],"modulePaths":[],"moduleNameMapper":{"^react-native$":"react-native-web","^.+\\.module\\.(css|sass|scss)$":"identity-obj-proxy"},"moduleFileExtensions":["web.js","js","web.ts","ts","web.tsx","tsx","json","web.jsx","jsx","node"],"watchPlugins":["jest-watch-typeahead/filename","jest-watch-typeahead/testname"],"rootDir":"/home/find_carol/Documentos/Estudo/projetos/sd-015-b-project-react-testing-library/.stryker-tmp/sandbox5219006","collectCoverage":false,"verbose":false,"bail":false,"notify":false,"reporters":[]}
+15:39:07 (27019) TRACE JestLessThan25TestAdapter Only running tests related to /home/find_carol/Documentos/Estudo/projetos/sd-015-b-project-react-testing-library/.stryker-tmp/sandbox5219006/src/components/PokemonDetails.js
+15:39:07 (26912) DEBUG TimeoutDecorator Starting timeout timer (13436.5 ms) for a test run
+15:39:07 (27188) TRACE JestLessThan25TestAdapter Invoking Jest with config {"roots":["<rootDir>/src"],"collectCoverageFrom":["**/*.{js,jsx}","!src/index.js","!src/serviceWorker.js"],"setupFiles":["/home/find_carol/Documentos/Estudo/projetos/sd-015-b-project-react-testing-library/node_modules/react-app-polyfill/jsdom.js"],"setupFilesAfterEnv":["<rootDir>/src/setupTests.js"],"testMatch":["<rootDir>/src/**/__tests__/**/*.{js,jsx,ts,tsx}","<rootDir>/src/**/*.{spec,test}.{js,jsx,ts,tsx}"],"testEnvironment":"jest-environment-jsdom-fourteen","transform":{"^.+\\.(js|jsx|ts|tsx)$":"/home/find_carol/Documentos/Estudo/projetos/sd-015-b-project-react-testing-library/node_modules/react-scripts/config/jest/babelTransform.js","^.+\\.css$":"/home/find_carol/Documentos/Estudo/projetos/sd-015-b-project-react-testing-library/node_modules/react-scripts/config/jest/cssTransform.js","^(?!.*\\.(js|jsx|ts|tsx|css|json)$)":"/home/find_carol/Documentos/Estudo/projetos/sd-015-b-project-react-testing-library/node_modules/react-scripts/config/jest/fileTransform.js"},"transformIgnorePatterns":["[/\\\\]node_modules[/\\\\].+\\.(js|jsx|ts|tsx)$","^.+\\.module\\.(css|sass|scss)$"],"modulePaths":[],"moduleNameMapper":{"^react-native$":"react-native-web","^.+\\.module\\.(css|sass|scss)$":"identity-obj-proxy"},"moduleFileExtensions":["web.js","js","web.ts","ts","web.tsx","tsx","json","web.jsx","jsx","node"],"watchPlugins":["jest-watch-typeahead/filename","jest-watch-typeahead/testname"],"rootDir":"/home/find_carol/Documentos/Estudo/projetos/sd-015-b-project-react-testing-library/.stryker-tmp/sandbox9671805","collectCoverage":false,"verbose":false,"bail":false,"notify":false,"reporters":[]}
+15:39:07 (27188) TRACE JestLessThan25TestAdapter Only running tests related to /home/find_carol/Documentos/Estudo/projetos/sd-015-b-project-react-testing-library/.stryker-tmp/sandbox9671805/src/components/PokemonDetails.js
+15:39:07 (26912) DEBUG TimeoutDecorator Starting timeout timer (13436.5 ms) for a test run
+15:39:07 (27025) TRACE JestLessThan25TestAdapter Invoking Jest with config {"roots":["<rootDir>/src"],"collectCoverageFrom":["**/*.{js,jsx}","!src/index.js","!src/serviceWorker.js"],"setupFiles":["/home/find_carol/Documentos/Estudo/projetos/sd-015-b-project-react-testing-library/node_modules/react-app-polyfill/jsdom.js"],"setupFilesAfterEnv":["<rootDir>/src/setupTests.js"],"testMatch":["<rootDir>/src/**/__tests__/**/*.{js,jsx,ts,tsx}","<rootDir>/src/**/*.{spec,test}.{js,jsx,ts,tsx}"],"testEnvironment":"jest-environment-jsdom-fourteen","transform":{"^.+\\.(js|jsx|ts|tsx)$":"/home/find_carol/Documentos/Estudo/projetos/sd-015-b-project-react-testing-library/node_modules/react-scripts/config/jest/babelTransform.js","^.+\\.css$":"/home/find_carol/Documentos/Estudo/projetos/sd-015-b-project-react-testing-library/node_modules/react-scripts/config/jest/cssTransform.js","^(?!.*\\.(js|jsx|ts|tsx|css|json)$)":"/home/find_carol/Documentos/Estudo/projetos/sd-015-b-project-react-testing-library/node_modules/react-scripts/config/jest/fileTransform.js"},"transformIgnorePatterns":["[/\\\\]node_modules[/\\\\].+\\.(js|jsx|ts|tsx)$","^.+\\.module\\.(css|sass|scss)$"],"modulePaths":[],"moduleNameMapper":{"^react-native$":"react-native-web","^.+\\.module\\.(css|sass|scss)$":"identity-obj-proxy"},"moduleFileExtensions":["web.js","js","web.ts","ts","web.tsx","tsx","json","web.jsx","jsx","node"],"watchPlugins":["jest-watch-typeahead/filename","jest-watch-typeahead/testname"],"rootDir":"/home/find_carol/Documentos/Estudo/projetos/sd-015-b-project-react-testing-library/.stryker-tmp/sandbox8872959","collectCoverage":false,"verbose":false,"bail":false,"notify":false,"reporters":[]}
+15:39:07 (27025) TRACE JestLessThan25TestAdapter Only running tests related to /home/find_carol/Documentos/Estudo/projetos/sd-015-b-project-react-testing-library/.stryker-tmp/sandbox8872959/src/components/PokemonDetails.js
+15:39:08 (26912) DEBUG TimeoutDecorator Starting timeout timer (13436.5 ms) for a test run
+15:39:08 (26912) DEBUG TimeoutDecorator Starting timeout timer (13436.5 ms) for a test run
+15:39:08 (27104) TRACE JestLessThan25TestAdapter Invoking Jest with config {"roots":["<rootDir>/src"],"collectCoverageFrom":["**/*.{js,jsx}","!src/index.js","!src/serviceWorker.js"],"setupFiles":["/home/find_carol/Documentos/Estudo/projetos/sd-015-b-project-react-testing-library/node_modules/react-app-polyfill/jsdom.js"],"setupFilesAfterEnv":["<rootDir>/src/setupTests.js"],"testMatch":["<rootDir>/src/**/__tests__/**/*.{js,jsx,ts,tsx}","<rootDir>/src/**/*.{spec,test}.{js,jsx,ts,tsx}"],"testEnvironment":"jest-environment-jsdom-fourteen","transform":{"^.+\\.(js|jsx|ts|tsx)$":"/home/find_carol/Documentos/Estudo/projetos/sd-015-b-project-react-testing-library/node_modules/react-scripts/config/jest/babelTransform.js","^.+\\.css$":"/home/find_carol/Documentos/Estudo/projetos/sd-015-b-project-react-testing-library/node_modules/react-scripts/config/jest/cssTransform.js","^(?!.*\\.(js|jsx|ts|tsx|css|json)$)":"/home/find_carol/Documentos/Estudo/projetos/sd-015-b-project-react-testing-library/node_modules/react-scripts/config/jest/fileTransform.js"},"transformIgnorePatterns":["[/\\\\]node_modules[/\\\\].+\\.(js|jsx|ts|tsx)$","^.+\\.module\\.(css|sass|scss)$"],"modulePaths":[],"moduleNameMapper":{"^react-native$":"react-native-web","^.+\\.module\\.(css|sass|scss)$":"identity-obj-proxy"},"moduleFileExtensions":["web.js","js","web.ts","ts","web.tsx","tsx","json","web.jsx","jsx","node"],"watchPlugins":["jest-watch-typeahead/filename","jest-watch-typeahead/testname"],"rootDir":"/home/find_carol/Documentos/Estudo/projetos/sd-015-b-project-react-testing-library/.stryker-tmp/sandbox1422404","collectCoverage":false,"verbose":false,"bail":false,"notify":false,"reporters":[]}
+15:39:08 (27104) TRACE JestLessThan25TestAdapter Only running tests related to /home/find_carol/Documentos/Estudo/projetos/sd-015-b-project-react-testing-library/.stryker-tmp/sandbox1422404/src/components/PokemonDetails.js
+15:39:08 (27182) TRACE JestLessThan25TestAdapter Invoking Jest with config {"roots":["<rootDir>/src"],"collectCoverageFrom":["**/*.{js,jsx}","!src/index.js","!src/serviceWorker.js"],"setupFiles":["/home/find_carol/Documentos/Estudo/projetos/sd-015-b-project-react-testing-library/node_modules/react-app-polyfill/jsdom.js"],"setupFilesAfterEnv":["<rootDir>/src/setupTests.js"],"testMatch":["<rootDir>/src/**/__tests__/**/*.{js,jsx,ts,tsx}","<rootDir>/src/**/*.{spec,test}.{js,jsx,ts,tsx}"],"testEnvironment":"jest-environment-jsdom-fourteen","transform":{"^.+\\.(js|jsx|ts|tsx)$":"/home/find_carol/Documentos/Estudo/projetos/sd-015-b-project-react-testing-library/node_modules/react-scripts/config/jest/babelTransform.js","^.+\\.css$":"/home/find_carol/Documentos/Estudo/projetos/sd-015-b-project-react-testing-library/node_modules/react-scripts/config/jest/cssTransform.js","^(?!.*\\.(js|jsx|ts|tsx|css|json)$)":"/home/find_carol/Documentos/Estudo/projetos/sd-015-b-project-react-testing-library/node_modules/react-scripts/config/jest/fileTransform.js"},"transformIgnorePatterns":["[/\\\\]node_modules[/\\\\].+\\.(js|jsx|ts|tsx)$","^.+\\.module\\.(css|sass|scss)$"],"modulePaths":[],"moduleNameMapper":{"^react-native$":"react-native-web","^.+\\.module\\.(css|sass|scss)$":"identity-obj-proxy"},"moduleFileExtensions":["web.js","js","web.ts","ts","web.tsx","tsx","json","web.jsx","jsx","node"],"watchPlugins":["jest-watch-typeahead/filename","jest-watch-typeahead/testname"],"rootDir":"/home/find_carol/Documentos/Estudo/projetos/sd-015-b-project-react-testing-library/.stryker-tmp/sandbox5521869","collectCoverage":false,"verbose":false,"bail":false,"notify":false,"reporters":[]}
+15:39:08 (27182) TRACE JestLessThan25TestAdapter Only running tests related to /home/find_carol/Documentos/Estudo/projetos/sd-015-b-project-react-testing-library/.stryker-tmp/sandbox5521869/src/components/PokemonDetails.js
+15:39:08 (26912) DEBUG TimeoutDecorator Starting timeout timer (13436.5 ms) for a test run
+15:39:08 (27214) TRACE JestLessThan25TestAdapter Invoking Jest with config {"roots":["<rootDir>/src"],"collectCoverageFrom":["**/*.{js,jsx}","!src/index.js","!src/serviceWorker.js"],"setupFiles":["/home/find_carol/Documentos/Estudo/projetos/sd-015-b-project-react-testing-library/node_modules/react-app-polyfill/jsdom.js"],"setupFilesAfterEnv":["<rootDir>/src/setupTests.js"],"testMatch":["<rootDir>/src/**/__tests__/**/*.{js,jsx,ts,tsx}","<rootDir>/src/**/*.{spec,test}.{js,jsx,ts,tsx}"],"testEnvironment":"jest-environment-jsdom-fourteen","transform":{"^.+\\.(js|jsx|ts|tsx)$":"/home/find_carol/Documentos/Estudo/projetos/sd-015-b-project-react-testing-library/node_modules/react-scripts/config/jest/babelTransform.js","^.+\\.css$":"/home/find_carol/Documentos/Estudo/projetos/sd-015-b-project-react-testing-library/node_modules/react-scripts/config/jest/cssTransform.js","^(?!.*\\.(js|jsx|ts|tsx|css|json)$)":"/home/find_carol/Documentos/Estudo/projetos/sd-015-b-project-react-testing-library/node_modules/react-scripts/config/jest/fileTransform.js"},"transformIgnorePatterns":["[/\\\\]node_modules[/\\\\].+\\.(js|jsx|ts|tsx)$","^.+\\.module\\.(css|sass|scss)$"],"modulePaths":[],"moduleNameMapper":{"^react-native$":"react-native-web","^.+\\.module\\.(css|sass|scss)$":"identity-obj-proxy"},"moduleFileExtensions":["web.js","js","web.ts","ts","web.tsx","tsx","json","web.jsx","jsx","node"],"watchPlugins":["jest-watch-typeahead/filename","jest-watch-typeahead/testname"],"rootDir":"/home/find_carol/Documentos/Estudo/projetos/sd-015-b-project-react-testing-library/.stryker-tmp/sandbox7554108","collectCoverage":false,"verbose":false,"bail":false,"notify":false,"reporters":[]}
+15:39:08 (27214) TRACE JestLessThan25TestAdapter Only running tests related to /home/find_carol/Documentos/Estudo/projetos/sd-015-b-project-react-testing-library/.stryker-tmp/sandbox7554108/src/components/PokemonDetails.js
+15:39:08 (26912) DEBUG TimeoutDecorator Starting timeout timer (13436.5 ms) for a test run
+15:39:08 (27220) TRACE JestLessThan25TestAdapter Invoking Jest with config {"roots":["<rootDir>/src"],"collectCoverageFrom":["**/*.{js,jsx}","!src/index.js","!src/serviceWorker.js"],"setupFiles":["/home/find_carol/Documentos/Estudo/projetos/sd-015-b-project-react-testing-library/node_modules/react-app-polyfill/jsdom.js"],"setupFilesAfterEnv":["<rootDir>/src/setupTests.js"],"testMatch":["<rootDir>/src/**/__tests__/**/*.{js,jsx,ts,tsx}","<rootDir>/src/**/*.{spec,test}.{js,jsx,ts,tsx}"],"testEnvironment":"jest-environment-jsdom-fourteen","transform":{"^.+\\.(js|jsx|ts|tsx)$":"/home/find_carol/Documentos/Estudo/projetos/sd-015-b-project-react-testing-library/node_modules/react-scripts/config/jest/babelTransform.js","^.+\\.css$":"/home/find_carol/Documentos/Estudo/projetos/sd-015-b-project-react-testing-library/node_modules/react-scripts/config/jest/cssTransform.js","^(?!.*\\.(js|jsx|ts|tsx|css|json)$)":"/home/find_carol/Documentos/Estudo/projetos/sd-015-b-project-react-testing-library/node_modules/react-scripts/config/jest/fileTransform.js"},"transformIgnorePatterns":["[/\\\\]node_modules[/\\\\].+\\.(js|jsx|ts|tsx)$","^.+\\.module\\.(css|sass|scss)$"],"modulePaths":[],"moduleNameMapper":{"^react-native$":"react-native-web","^.+\\.module\\.(css|sass|scss)$":"identity-obj-proxy"},"moduleFileExtensions":["web.js","js","web.ts","ts","web.tsx","tsx","json","web.jsx","jsx","node"],"watchPlugins":["jest-watch-typeahead/filename","jest-watch-typeahead/testname"],"rootDir":"/home/find_carol/Documentos/Estudo/projetos/sd-015-b-project-react-testing-library/.stryker-tmp/sandbox7851944","collectCoverage":false,"verbose":false,"bail":false,"notify":false,"reporters":[]}
+15:39:08 (27220) TRACE JestLessThan25TestAdapter Only running tests related to /home/find_carol/Documentos/Estudo/projetos/sd-015-b-project-react-testing-library/.stryker-tmp/sandbox7851944/src/components/PokemonDetails.js
+15:39:09 (26912) DEBUG ClearTextReporter [1m[32mMutant killed![39m[22m
+15:39:09 (26912) DEBUG ClearTextReporter 0. [Killed] StringLiteral
+15:39:09 (26912) DEBUG ClearTextReporter /home/find_carol/Documentos/Estudo/projetos/sd-015-b-project-react-testing-library/src/App.js:99:46
+15:39:09 (26912) DEBUG ClearTextReporter [31m-             <Link className="link" to="/about">{`About`}</Link>[39m
+15:39:09 (26912) DEBUG ClearTextReporter [32m+             <Link className="link" to="/about">{""}</Link>[39m
+15:39:09 (26912) DEBUG ClearTextReporter 
+15:39:09 (26912) DEBUG ClearTextReporter Ran all tests for this mutant.
+15:39:09 (26912) DEBUG ClearTextReporter [1m[32mMutant killed![39m[22m
+15:39:09 (26912) DEBUG ClearTextReporter 1. [Killed] StringLiteral
+15:39:09 (26912) DEBUG ClearTextReporter /home/find_carol/Documentos/Estudo/projetos/sd-015-b-project-react-testing-library/src/App.js:98:41
+15:39:09 (26912) DEBUG ClearTextReporter [31m-             <Link className="link" to="/">{`Home`}</Link>[39m
+15:39:09 (26912) DEBUG ClearTextReporter [32m+             <Link className="link" to="/">{""}</Link>[39m
+15:39:09 (26912) DEBUG ClearTextReporter 
+15:39:09 (26912) DEBUG ClearTextReporter Ran all tests for this mutant.
+15:39:09 (26912) DEBUG ClearTextReporter [1m[32mMutant killed![39m[22m
+15:39:09 (26912) DEBUG ClearTextReporter 2. [Killed] StringLiteral
+15:39:09 (26912) DEBUG ClearTextReporter /home/find_carol/Documentos/Estudo/projetos/sd-015-b-project-react-testing-library/src/components/About.js:5:10
+15:39:09 (26912) DEBUG ClearTextReporter [31m-       <h2>{ `About ` + `Pokédex` }</h2>[39m
+15:39:09 (26912) DEBUG ClearTextReporter [32m+       <h2>{ "" + `Pokédex` }</h2>[39m
+15:39:09 (26912) DEBUG ClearTextReporter 
+15:39:09 (26912) DEBUG ClearTextReporter Ran all tests for this mutant.
+15:39:09 (26912) DEBUG ClearTextReporter [1m[32mMutant killed![39m[22m
+15:39:09 (26912) DEBUG ClearTextReporter 3. [Killed] StringLiteral
+15:39:09 (26912) DEBUG ClearTextReporter /home/find_carol/Documentos/Estudo/projetos/sd-015-b-project-react-testing-library/src/App.js:100:50
+15:39:09 (26912) DEBUG ClearTextReporter [31m-             <Link className="link" to="/favorites">{`Favorite Pokémons`}</Link>[39m
+15:39:09 (26912) DEBUG ClearTextReporter [32m+             <Link className="link" to="/favorites">{""}</Link>[39m
+15:39:09 (26912) DEBUG ClearTextReporter 
+15:39:09 (26912) DEBUG ClearTextReporter Ran all tests for this mutant.
+15:39:09 (26912) DEBUG ClearTextReporter [1m[32mMutant killed![39m[22m
+15:39:09 (26912) DEBUG ClearTextReporter 4. [Killed] StringLiteral
+15:39:09 (26912) DEBUG ClearTextReporter /home/find_carol/Documentos/Estudo/projetos/sd-015-b-project-react-testing-library/src/components/About.js:5:21
+15:39:09 (26912) DEBUG ClearTextReporter [31m-       <h2>{ `About ` + `Pokédex` }</h2>[39m
+15:39:09 (26912) DEBUG ClearTextReporter [32m+       <h2>{ `About ` + "" }</h2>[39m
+15:39:09 (26912) DEBUG ClearTextReporter 
+15:39:09 (26912) DEBUG ClearTextReporter Ran all tests for this mutant.
+15:39:09 (26912) DEBUG ClearTextReporter [1m[32mMutant killed![39m[22m
+15:39:09 (26912) DEBUG ClearTextReporter 5. [Killed] StringLiteral
+15:39:09 (26912) DEBUG ClearTextReporter /home/find_carol/Documentos/Estudo/projetos/sd-015-b-project-react-testing-library/src/components/Pokedex.js:29:27
+15:39:09 (26912) DEBUG ClearTextReporter [31m-         if (filteredType === 'all') return true;[39m
+15:39:09 (26912) DEBUG ClearTextReporter [32m+         if (filteredType === "") return true;[39m
+15:39:09 (26912) DEBUG ClearTextReporter 
+15:39:09 (26912) DEBUG ClearTextReporter Ran all tests for this mutant.
+15:39:09 (26912) DEBUG ClearTextReporter [1m[32mMutant killed![39m[22m
+15:39:09 (26912) DEBUG ClearTextReporter 18. [Killed] StringLiteral
+15:39:09 (26912) DEBUG ClearTextReporter /home/find_carol/Documentos/Estudo/projetos/sd-015-b-project-react-testing-library/src/components/NotFound.js:6:27
+15:39:09 (26912) DEBUG ClearTextReporter [31m-         {`Page requested ` + `not found`}[39m
+15:39:09 (26912) DEBUG ClearTextReporter [32m+         {`Page requested ` + ""}[39m
+15:39:09 (26912) DEBUG ClearTextReporter 
+15:39:09 (26912) DEBUG ClearTextReporter Ran all tests for this mutant.
+15:39:09 (26912) DEBUG ClearTextReporter [1m[32mMutant killed![39m[22m
+15:39:09 (26912) DEBUG ClearTextReporter 19. [Killed] StringLiteral
+15:39:09 (26912) DEBUG ClearTextReporter /home/find_carol/Documentos/Estudo/projetos/sd-015-b-project-react-testing-library/src/components/NotFound.js:6:7
+15:39:09 (26912) DEBUG ClearTextReporter [31m-         {`Page requested ` + `not found`}[39m
+15:39:09 (26912) DEBUG ClearTextReporter [32m+         {"" + `not found`}[39m
+15:39:09 (26912) DEBUG ClearTextReporter 
+15:39:09 (26912) DEBUG ClearTextReporter Ran all tests for this mutant.
+15:39:09 (26912) DEBUG ClearTextReporter [1m[32mMutant killed![39m[22m
+15:39:09 (26912) DEBUG ClearTextReporter 20. [Killed] StringLiteral
+15:39:09 (26912) DEBUG ClearTextReporter /home/find_carol/Documentos/Estudo/projetos/sd-015-b-project-react-testing-library/src/components/Pokedex.js:11:50
+15:39:09 (26912) DEBUG ClearTextReporter [31m-       this.state = { pokemonIndex: 0, filteredType: 'all' };[39m
+15:39:09 (26912) DEBUG ClearTextReporter [32m+       this.state = { pokemonIndex: 0, filteredType: "" };[39m
+15:39:09 (26912) DEBUG ClearTextReporter 
+15:39:09 (26912) DEBUG ClearTextReporter Ran all tests for this mutant.
+15:39:09 (26912) DEBUG HtmlReporter No base folder configuration found (using configuration: htmlReporter: { baseDir: 'output/folder' }), using default reports/mutation/html
+15:39:09 (26912) DEBUG MutationTestReportCalculator No breaking threshold configured. Won't fail the build no matter how low your mutation score is. Set `thresholds.break` to change this behavior.
+15:39:10 (26912) INFO HtmlReporter Your report can be found at: file:///home/find_carol/Documentos/Estudo/projetos/sd-015-b-project-react-testing-library/reports/mutation/html/index.html
+15:39:10 (26912) INFO Stryker Done in 23 seconds.
+15:39:10 (26912) DEBUG ChildProcessProxy Disposing of worker process 27019
+15:39:10 (26912) DEBUG ChildProcessProxy Disposing of worker process 27025
+15:39:10 (26912) DEBUG ChildProcessProxy Disposing of worker process 27057
+15:39:10 (26912) DEBUG ChildProcessProxy Disposing of worker process 27064
+15:39:10 (26912) DEBUG ChildProcessProxy Disposing of worker process 27098
+15:39:10 (26912) DEBUG ChildProcessProxy Disposing of worker process 27104
+15:39:10 (26912) DEBUG ChildProcessProxy Disposing of worker process 27182
+15:39:10 (26912) DEBUG ChildProcessProxy Disposing of worker process 27188
+15:39:10 (26912) DEBUG ChildProcessProxy Disposing of worker process 27214
+15:39:10 (26912) DEBUG ChildProcessProxy Disposing of worker process 27220
+15:39:10 (26912) DEBUG ChildProcessProxy Disposing of worker process 27240
+15:39:10 (26912) DEBUG ChildProcessProxy Disposing of worker process 27241
+15:39:10 (26912) DEBUG ChildProcessProxy Kill 27098
+15:39:10 (26912) DEBUG ChildProcessProxy Kill 27104
+15:39:10 (26912) DEBUG ChildProcessProxy Kill 27182
+15:39:10 (26912) DEBUG ChildProcessProxy Kill 27188
+15:39:10 (26912) DEBUG ChildProcessProxy Kill 27019
+15:39:10 (26912) DEBUG ChildProcessProxy Kill 27025
+15:39:10 (26912) DEBUG ChildProcessProxy Kill 27057
+15:39:10 (26912) DEBUG ChildProcessProxy Kill 27064
+15:39:10 (26912) DEBUG ChildProcessProxy Kill 27214
+15:39:10 (26912) DEBUG ChildProcessProxy Kill 27220
+15:39:10 (26912) DEBUG ChildProcessProxy Kill 27240
+15:39:10 (26912) DEBUG ChildProcessProxy Kill 27241
+15:39:10 (26912) DEBUG TemporaryDirectory Deleting stryker temp directory /home/find_carol/Documentos/Estudo/projetos/sd-015-b-project-react-testing-library/.stryker-tmp
