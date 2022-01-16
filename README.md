@@ -31,10 +31,10 @@ Install the dependencies and devDependencies and start the server.
 ```sh
 cd project-recipes-app
 npm install
-npm start
+npm start (To see the application)
 ```
 
-### Testing the unit tests ...
+### Unit tests ...
 List of files where I did the tests:
 1. Test done on the component <App.js />
 2. Test done on the component <About.js />
